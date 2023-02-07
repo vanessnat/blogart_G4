@@ -19,16 +19,20 @@ $articles = sql_select("article", "*");
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Id</th>
-                        <th>Title</th>
+                        <th>Titre</th>
+                        <th>Chapô</th>
+                        <th>Date</th>
+                        <th>Mots-clés</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php foreach ($articles as $article) { ?>
                         <tr>
-                            <td><?php echo $article['numArt']; ?></td>
                             <td><?php echo $article['libTitrArt']; ?></td>
+                            <td><?php echo $article['libChapoArt']; ?></td>
+                            <td><?php echo $article['dtCreArt']; ?></td>
+                            <td><?php echo $article['numThem']; ?></td>
                             <td>
                                 <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-primary">Edit</a>
                                 <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>

@@ -25,7 +25,7 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
             <!--Form to edit a new status-->
             <form action="<?php echo ROOT_URL . '/api/status/update.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="libStat">libStat</label>
+                    <label for="libStat">Statut selectionné</label>
                     <input id="numStat" class="form-control" style="display: none "type="text" name="numStat" value="<?php echo ($numStat)?>" >
                     <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo ($libStat)?>" >
                 </div>

@@ -10,6 +10,8 @@ include '../../../header.php';
 
 
 $numArt = $_GET['numArt'];
+$article = sql_select("article", "*", "numArt = $numArt")[0];
+/*
 $dtCreArt = sql_select("article", "dtCreArt", "numArt = $numArt")[0]['dtCreArt']; 
 $libTitrArt = sql_select("article", "libTitrArt", "numArt = $numArt")[0]['libTitrArt']; 
 $libChapoArt = sql_select("article", "libChapoArt", "numArt = $numArt")[0]['libChapoArt']; 
@@ -22,6 +24,7 @@ $parag3Art = sql_select("article", "parag3Art", "numArt = $numArt")[0]['parag3Ar
 $libConclArt = sql_select("article", "libConclArt", "numArt = $numArt")[0]['libConclArt']; 
 $urlPhotArt = sql_select("article", "urlPhotArt", "numArt = $numArt")[0]['urlPhotArt']; 
 $numThem = sql_select("article", "numThem", "numArt = $numArt")[0]['numThem']; 
+*/
 
 ?>
 
@@ -37,29 +40,29 @@ $numThem = sql_select("article", "numThem", "numArt = $numArt")[0]['numThem'];
             <form action="<?php echo ROOT_URL . '/api/articles/update.php' ?>" method="post">
                 <div class="form-group">
                     <label for="dtCreArt">Date</label>
-                    <input id="dtCreArt" class="form-control" type="date" name="dtCreArt" value="<?php echo ($dtCreArt)?>">
+                    <input id="dtCreArt" class="form-control" type="datetime-local" name="dtCreArt" value="<?php echo ($article['dtCreArt'])?>">
                     <label for="libTitrArt">Titre</label>
-                    <input id="libTitrArt" class="form-control" type="text" name="libTitrArt" value="<?php echo ($libTitrArt)?>">
+                    <input id="libTitrArt" class="form-control" type="text" name="libTitrArt" value="<?php echo ($article['libTitrArt'])?>">
                     <label for="libChapoArt">Chapô</label>
-                    <input id="libChapoArt" class="form-control" type="text" name="libChapoArt" value="<?php echo ($libChapoArt)?>">
+                    <input id="libChapoArt" class="form-control" type="text" name="libChapoArt" value="<?php echo ($article['libChapoArt'])?>">
                     <label for="libAccrochArt">Accroche</label>
-                    <input id="libAccrochArt" class="form-control" type="text" name="libAccrochArt" value="<?php echo ($libAccrochArt)?>">
+                    <input id="libAccrochArt" class="form-control" type="text" name="libAccrochArt" value="<?php echo ($article['libAccrochArt'])?>">
                     <label for="parag1Art">Paragraphe 1</label>
-                    <input id="parag1Art" class="form-control" type="text-area" name="parag1Art" value="<?php echo ($parag1Art)?>">
+                    <input id="parag1Art" class="form-control" type="text-area" name="parag1Art" value="<?php echo ($article['parag1Art'])?>">
                     <label for="libSsTitr1Art">Sous-titre 1</label>
-                    <input id="libSsTitr1Art" class="form-control" type="text" name="libSsTitr1Art" value="<?php echo ($libSsTitr1Art)?>">
+                    <input id="libSsTitr1Art" class="form-control" type="text" name="libSsTitr1Art" value="<?php echo ($article['libSsTitr1Art'])?>">
                     <label for="parag2Art">Paragraphe 2</label>
-                    <input id="parag2Art" class="form-control" type="text-area" name="parag2Art" value="<?php echo ($parag2Art)?>">
+                    <input id="parag2Art" class="form-control" type="text-area" name="parag2Art" value="<?php echo ($article['parag2Art'])?>">
                     <label for="libSsTitr2Art">Sous-titre 2</label>
-                    <input id="libSsTitr2Art" class="form-control" type="text" name="libSsTitr2Art" value="<?php echo ($libSsTitr2Art)?>">
+                    <input id="libSsTitr2Art" class="form-control" type="text" name="libSsTitr2Art" value="<?php echo ($article['libSsTitr2Art'])?>">
                     <label for="parag3Art">Paragraphe 3</label>
-                    <input id="parag3Art" class="form-control" type="text-area" name="parag3Art" value="<?php echo ($parag3Art)?>">
+                    <input id="parag3Art" class="form-control" type="text-area" name="parag3Art" value="<?php echo ($article['parag3Art'])?>">
                     <label for="libConclArt">Conclusion</label>
-                    <input id="libConclArt" class="form-control" type="text" name="libConclArt" value="<?php echo ($libConclArt)?>">
+                    <input id="libConclArt" class="form-control" type="text" name="libConclArt" value="<?php echo ($article['libConclArt'])?>">
                     <label for="urlPhotArt">Illustration</label>
-                    <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt" value="<?php echo ($urlPhotArt)?>" accept="image/png, image/jpeg">
+                    <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt" value="<?php echo ($article['urlPhotArt'])?>" accept="image/png, image/jpeg">
                     <label for="numThem">Thématique</label>
-                    <select id="numThem" class="form-control" type="text" name="numThem" value="<?php echo ($numThem)?>">
+                    <select id="numThem" class="form-control" type="text" name="numThem" value="<?php echo ($article['numThem'])?>">
                     <option value="">--Choisissez un thème--</option>
                     <option value="dog">Histoires et secrets</option>
                     <option value="cat">Lieux et monuments</option>

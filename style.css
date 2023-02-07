@@ -1,0 +1,380 @@
+body {
+    background-color: #ECECEC;
+    margin: 0;
+}
+
+.logo {
+    width: 102px;
+    height: 101px;
+    justify-content: left;
+    margin-top: 16px;
+    margin-left: 27px;
+}
+
+.Imageaccueil {
+    max-width: 1220px;
+    height: auto;
+}
+
+.menutabb {
+    text-decoration: none;
+    color: #093D4D;
+    font-size: 20px;
+}
+
+.tab {
+    justify-content: center;
+    text-indent: 15px;
+    font-size: 1.5vw;
+}
+
+header {
+    background-color: #093D4D;
+    padding-bottom: 15px;
+}
+
+.tabletxt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-indent: 5px;
+    color: #FFFFFF;
+}
+
+
+.Histoiresetsecretstab {
+    text-align: center;
+    font-family: 'Josephin Sans';
+    font-style: normal;
+}
+
+.Lieuxetmonumentstab {
+    font-family: 'Josephin Sans';
+    font-style: normal;
+}
+
+.Actualitestab {
+    font-family: 'Josephin Sans';
+    font-style: normal;
+}
+
+.Sinscriretab {
+    font-family: 'Josephin Sans';
+    font-style: normal;
+}
+
+.Seconnectertab {
+    font-family: 'Josephin Sans';
+    font-style: normal;
+}
+
+.EngFrtab {
+    font-family: 'Josephin Sans';
+    font-style: normal;
+}
+
+
+.container {
+    display: flex;
+}
+
+
+
+.bloc-intro {
+    display: flex;
+    justify-content: center;
+    height: 10cm;
+    padding-bottom: 60px;
+    padding-top: -70px;
+}
+
+.marbre-intro {
+    background: url(Marbre\ 1.png);
+    width: 600px;
+    height: 350px;
+    border-radius: 19.0144px;
+    margin-top: -180px;
+}
+
+.text-intro{
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    padding-top: 34px;
+    padding-left: 30px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #093D4D;
+}
+
+.paragraphe-intro{
+    display: flex;
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 30px;
+    padding-bottom: 28px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    color: #093D4D;
+}
+
+
+.insolit-titre{
+    display: flex;
+    text-align: left;
+    justify-content: flex-end;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #093D4D;
+}
+
+
+.classe-titres {
+    display: flex;
+    justify-content: center;
+    font-family: 'Josephin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+    color: #093D4D;
+}
+
+.categories{
+    display: flex;
+    justify-content: center;
+    height: 7cm;
+    padding-top: 200px;
+}
+
+.categories-text{
+    position: absolute;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    color: #093D4D;
+    margin-left: 152px;
+}
+
+.buttons{
+    float: left;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.button-histsecrets{
+    background: url(Marbre\ 1.png);
+    border: none;
+    padding: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: #093D4C;
+    border-radius: 20px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.button-lieuxmonuments{
+    background: url(Marbre\ 1.png);
+    border: none;
+    padding: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: #093D4C;
+    border-radius: 20px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.button-actualites{
+    background: url(Marbre\ 1.png);
+    border: none;
+    padding: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    color: #093D4C;
+    border-radius: 15px;
+    transform: matrix(0, -1, 1, 0, 0, 0);
+}
+
+.articles1{
+    display: flex;
+    justify-content: center;
+    height: 10cm;
+    padding-top: 142px;
+}
+
+.article-1{
+    display: flex;
+    width: 914px;
+    height: 348px;
+    background: url(Marbre\ 1.png);
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 114px;
+}
+
+.article-1 img {
+    width: 457px;
+    height: 200px;
+    border-radius: 19px 0px 0px 19px;
+    background-image: url(Alphonse\ bertillon.jpg);
+    object-fit: fill;
+}
+
+.article-text1{
+    display: flex;
+    color: #093D4C;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.article-column{
+    display: flex;
+    align-items: baseline;
+}
+
+
+.articles2{
+    display: flex;
+    justify-content: center;
+    height: 10cm;
+    padding-top: 142px;
+}
+
+.article-2{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 914px;
+    height: 348px;
+    background: url(Marbre\ 1.png);
+    border-radius: 20px;
+    padding: 15px 32px;
+    margin-top: 101px;
+}
+
+.footer{
+    position: absolute;
+    width: 1220px;
+    height: 11cm;
+    background: #093D4C;
+}
+
+.contenu-footer{
+    display:flex;
+}
+
+.logo-footer{
+    position: absolute;
+    width: 152px;
+    height: 151px;
+    padding: 40px;
+    margin-bottom: 100px;
+}
+
+.footer-text1{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    line-height: 24px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.footer-text2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 24px;
+    margin-left: 64px;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-decoration-line: underline;
+    color: #ffffff;
+    justify-content: space-between;
+}
+
+.footer-questions{
+    display: flex;
+}
+
+.text-questions{
+    display: flex;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    align-items: flex-start;
+    margin-top: 85px;
+    justify-content: center;
+    margin-left: 89px;
+}
+
+.formulaire-questions{
+    display: flex;
+}
+
+.formulaire-nom{
+    display: flex;
+    width: 350px;
+    height: 46px;
+    background: #FBFBFB;
+    border-radius: 7px;
+}
+
+<div class="footer-questions">
+                <h3 class="text-questions">Des questions ?</h3>
+                <div class="formulaire-questions">
+                    <div class="formulaire-nom">Nom</div>
+                    <div class="formulaire-prenom">Prénom</div>
+                    <div class="formualire-email">E-mail</div>
+                    <div class="formulaire-description">Description</div>
+                </div>
+                </div>
+            </div>
+
+
+

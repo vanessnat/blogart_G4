@@ -27,8 +27,6 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/status/list.php" class="btn btn-primary">List</a>
                                 <a href="/views/backend/status/create.php" class="btn btn-success">Create</a>
-                                <a href="/views/backend/status/edit.php" class="btn btn-warning">Edit</a>
-                                <a href="/views/backend/status/delete.php" class="btn btn-danger">Delete</a>
                             </td>
                             <td>
                                 <p>Exemple fournis s'y referer pour travailler</p>
@@ -39,7 +37,7 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/members/list.php" class="btn btn-primary disabled">List</a>
                                 <a href="/views/backend/members/create.php" class="btn btn-success disabled">Create</a>
-                                <a href="/views/backend/members/edit.php" class="btn btn-warning disabled">Edit</a>
+                                <a href="/views/backend/members/update.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/members/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
                             <td>Attention, il faut aussi gérer la partie inscription/connection et la sécurité</td>
@@ -47,10 +45,10 @@ include '../../header.php';
                         <tr>
                             <td>Articles</td>
                             <td>
-                                <a href="/views/backend/articles/list.php" class="btn btn-primary disabled">List</a>
-                                <a href="/views/backend/articles/create.php" class="btn btn-success disabled">Create</a>
-                                <a href="/views/backend/articles/edit.php" class="btn btn-warning disabled">Edit</a>
-                                <a href="/views/backend/articles/delete.php" class="btn btn-danger disabled">Delete</a>
+                                <a href="/views/backend/articles/list.php" class="btn btn-primary">List</a>
+                                <a href="/views/backend/articles/create.php" class="btn btn-success">Create</a>
+                                <a href="/views/backend/articles/update.php" class="btn btn-warning">Edit</a>
+                                <a href="/views/backend/articles/delete.php" class="btn btn-danger">Delete</a>
                             </td>
                             <td></td>
                         </tr>
@@ -59,7 +57,7 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/thematiques/list.php" class="btn btn-primary disabled">List</a>
                                 <a href="/views/backend/thematiques/create.php" class="btn btn-success disabled">Create</a>
-                                <a href="/views/backend/thematiques/edit.php" class="btn btn-warning disabled">Edit</a>
+                                <a href="/views/backend/thematiques/update.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/thematiques/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
                             <td></td>
@@ -69,7 +67,7 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/comments/list.php" class="btn btn-primary disabled">List</a>
                                 <a href="/views/backend/comments/create.php" class="btn btn-success disabled">Create</a>
-                                <a href="/views/backend/comments/edit.php" class="btn btn-warning disabled">Edit</a>
+                                <a href="/views/backend/comments/update.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/comments/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
                             <td></td>
@@ -79,7 +77,7 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/likes/list.php" class="btn btn-primary disabled">List</a>
                                 <a href="/views/backend/likes/create.php" class="btn btn-success disabled">Create</a>
-                                <a href="/views/backend/likes/edit.php" class="btn btn-warning disabled">Edit</a>
+                                <a href="/views/backend/likes/update.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/likes/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
                             <td>Utilisation de Ajax si trop de temps ;)</td>
@@ -89,7 +87,7 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/keywords/list.php" class="btn btn-primary disabled">List</a>
                                 <a href="/views/backend/keywords/create.php" class="btn btn-success disabled">Create</a>
-                                <a href="/views/backend/keywords/edit.php" class="btn btn-warning disabled">Edit</a>
+                                <a href="/views/backend/keywords/update.php" class="btn btn-warning disabled">Edit</a>
                                 <a href="/views/backend/keywords/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
                             <td></td>

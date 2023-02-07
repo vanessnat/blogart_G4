@@ -2,6 +2,8 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php' ; 
 
+
+$dtCreArt = $_POST['dtCreArt'];
 $libTitrArt = $_POST['libTitrArt'];
 $libChapoArt = $_POST['libChapoArt'];
 $libAccrochArt = $_POST['libAccrochArt'];
@@ -14,7 +16,7 @@ $libConclArt = $_POST['libConclArt'];
 $urlPhotArt = $_POST['urlPhotArt'];
 $numThem = $_POST['numThem'];
 
-sql_insert('article', "libTitrArt, libChapoArt, libAccrochArt, parag1Art, libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art,libConclArt, urlPhotArt, numThem", "'$libTitrArt', '$libChapoArt', '$libAccrochArt', '$parag1Art', '$libSsTitr1Art', '$parag2Art', '$libSsTitr2Art', '$parag3Art', '$libConclArt', '$urlPhotArt', $numThem");
+sql_insert('article', "dtCreArt, libTitrArt, libChapoArt, libAccrochArt, parag1Art, libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art,libConclArt, urlPhotArt, numThem", "$dtCreArt, '$libTitrArt', '$libChapoArt', '$libAccrochArt', '$parag1Art', '$libSsTitr1Art', '$parag2Art', '$libSsTitr2Art', '$parag3Art', '$libConclArt', '$urlPhotArt', $numThem");
 
 header('Location: ../../views/backend/articles/list.php');
 ?>

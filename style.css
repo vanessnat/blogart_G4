@@ -372,19 +372,41 @@ header {
 }
 
 .text-questions{
+    display: flex;
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
     color: #FFFFFF;
-    
+    align-items: flex-start;
+    margin-top: 85px;
+    justify-content: center;
+    margin-left: 89px;
 }
 
+.formulaire-questions{
+    display: flex;
+}
 
+.formulaire-nom{
+    display: flex;
+    width: 350px;
+    height: 46px;
+    background: #FBFBFB;
+    border-radius: 7px;
+}
 
-
-
+<div class="footer-questions">
+                <h3 class="text-questions">Des questions ?</h3>
+                <div class="formulaire-questions">
+                    <div class="formulaire-nom">Nom</div>
+                    <div class="formulaire-prenom">Prénom</div>
+                    <div class="formualire-email">E-mail</div>
+                    <div class="formulaire-description">Description</div>
+                </div>
+                </div>
+            </div>
 
 
 

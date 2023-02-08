@@ -27,7 +27,7 @@ $nomMemb = sql_select("membre", "nomMemb", "numMemb = $numMemb")[0]['nomMemb'];
             <form action="<?php echo ROOT_URL . '/api/users/delete.php' ?>" method="post">
                 <div class="form-group">
                     <label for="nomMemb">Membre selectionné</label>
-                    <input id="numMemb" class="form-control" style="display: none" type="text" name="numArt" value="<?php echo ($numMemb)?>" readonly="readonly">
+                    <input id="numMemb" class="form-control" style="display: none" type="text" name="numMemb" value="<?php echo ($numMemb)?>" readonly="readonly">
                     <input id="nomMemb" class="form-control" type="text" name="nomMemb" value="<?php echo ($nomMemb)?>" readonly="readonly">
                 </div>
                 <div class="form-group mt-2">

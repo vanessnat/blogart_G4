@@ -26,6 +26,8 @@ $membre = sql_select("membre", "*", "numMemb = $numMemb")[0];
             <!--Form to edit a new member-->
             <form action="<?php echo ROOT_URL . '/api/users/update.php' ?>" method="post">
                 <div class="form-group">
+                    <label for="numMemb">Statut</label>
+                    <input id="numMemb" class="form-control" type="text"  style="display: none" name="numMemb" value="<?php echo ($membre['numMemb'])?>">
                     <label for="prenomMemb">Prénom</label>
                     <input id="prenomMemb" class="form-control" type="text" name="prenomMemb" value="<?php echo ($membre['prenomMemb'])?>">
                     <label for="nomMemb">Nom</label>

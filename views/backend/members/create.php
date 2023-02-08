@@ -23,8 +23,8 @@ include '../../../header.php';
                     <input id="passMemb" class="form-control" type="password" name="passMemb"  minlength="8" required>
                     <label for="eMailMemb">E-mail</label>
                     <input id="eMailMemb" class="form-control" type="email" name="eMailMemb"  size="30" required>
-                    <label for="dtCreMemb">Date</label>
-                    <input id="dtCreMemb" class="form-control" type="datetime-local" name="dtCreMemb" >
+                    <label for="numStat">Statut</label>
+                    <input id="numStat" class="form-control" type="text" name="numStat" >
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Create</button>

@@ -5,10 +5,10 @@ $thematiques = sql_select("thematique", "*");
 
 <!--Bootstrap form to create a new article-->
 <Body style="background-color: #ECECEC">
+<link rel="stylesheet" href="/src/css/style.css">
 <img src="/src/css/Accueil Image.png" class="img-fluid">
 <div class="container">
-    <div class="card text-bg">
-        <img src="/src/css/Marbre 1.png" class="img-fluid" class="card-img">
+    <div class="card text-bg card-box" >
         <div class="card-img-overlay">
             <h1 class="card-title text-center">Création d'articles</h1>
         </div>

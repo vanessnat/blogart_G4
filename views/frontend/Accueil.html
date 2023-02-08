@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #093D4D; ">
             <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/views/frontend/Accueil.html">
                 <img src="/src/css/Logo 2.jpg" alt="logo" width="85" height="84">
             </a>
             <div class="container-fluid">
@@ -30,10 +30,13 @@
                         <a class="nav-link active text-white" aria-current="page" href="#" >Actualités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#" >S'inscrire</a>
+                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/register.php" >S'inscrire</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#" >Se connecter</a>
+                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/login.php" >Se connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/dashboard.php">Mon compte</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="#" >Eng | Fr</a>
@@ -44,19 +47,20 @@
 </header>
 
     <section>
-        <div class="container">
-            <img src="/src/css/Accueil Image.png" class="img-fluid">
-        </div>
+        <img src="/src/css/Accueil Image.png" class="img-fluid">
         <div class="bloc-intro">
-            <div class="marbre-intro">
-                <h3 class="text-intro">Insolit'Bordeaux</h3>
-                <h4 class="paragraphe-intro">Insolit'Bordeaux vous communique tout un tas d'histoires et de secrets autour de la ville de Bordeaux. Sur des lieux, monuments, comme célébrités ou expositions, nos articles rédigés par notre équipe veulent vous dévoiler les secrets les plus insolites et méconnus.</h4>
+            <div class="container">
+                    <h2 class="col-mid-4 text-left">Insolit'Bordeaux</h2>
+                    <h5 class="col-mid-4 text-left">Insolit'Bordeaux vous communique tout un tas d'histoires et de secrets autour de la ville de Bordeaux. Sur des lieux, monuments, comme célébrités ou expositions, nos articles rédigés par notre équipe veulent vous dévoiler les secrets les plus insolites et méconnus.</h4>
+                </div>
             </div>
         </div>
     </section>
 
 
-    <div class="categories-text">Nos catégories d'articles</div>
+    <div class="categories-text">
+        <h1>Nos catégories d'articles</h1>
+    </div>
     <section class="categories">
         <div class="buttons">
             <a href="#" class="button-histsecrets">Histoire et secrets</a>
@@ -65,13 +69,17 @@
         </div>
     </section>
 
-    <div class="categories-text">Derniers articles</div>
-    <section class="articles1">
-        <div class="card mb-3">
-            <img src="/src/css/Marbre 1.png" class="card-img">
-            <div class="card-img-overlay">
-                <img src="/src/css/Alphonse bertillon.jpg" class="rounded float-left w-50">
-                <div class="col-md-8">
+    <div class="categories-text">
+        <h1>Derniers articles</h1>
+    </div>
+    <section class="section-articles">
+        <div class="container">
+            <div class="card text-bg">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="/src/css/Alphonse bertillon.jpg" class="img-bertillon">
+                </div>
+                <div class="col-lg-6">
                     <div class="class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -82,19 +90,27 @@
         </div>
     </section>
 
-    <section class="footer">
-        <img class="logo-footer" src="/src/css/Logo 2.jpg">
-        <div class="contenu-footer">
-                <div class="footer-text1">
-                    <ul>
-                        <h5>Tous nos articles</h5>
-                        <h5>Histoires et secrets</h5>
-                        <h5>Lieux et monuments</h5>
-                        <h5>Actualités</h5>
-                        <h5>Contact</h5>
-                    </ul>
-                </div>
-            <div class="footer-text2">
+    <section class="text-center">
+        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11313.04051376454!2d-0.5849997921874824!3d44.8569989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5528763e4a8959%3A0x6a0782a140a43f2c!2sArchives%20d%C3%A9partementales%20de%20la%20Gironde!5e0!3m2!1sfr!2sfr!4v1675871240064!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-12">
+                <img class="logo-footer" src="/src/css/Logo 2.jpg">
+            </div>
+            <div class="col-lg-3 col-12">
+                <ul>
+                    <a href="#" class="lien-footer">Tous nos articles</a>
+                    <h5>Histoires et secrets</h5>
+                    <h5>Lieux et monuments</h5>
+                    <h5>Actualités</h5>
+                    <h5>Contact</h5>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-12">
                 <ul>
                     <h5>A propos</h5>
                     <h5>Compte</h5>
@@ -103,30 +119,34 @@
                     <h5>Mentions légales</h5>
                 </ul>
             </div>
-        <div>
-            <form>
-                <h5 class="questions-text">Des questions ?</h5>
-                <div class="row">
-                    <div class="form-group inline">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nom">
+            <div class="col-lg-4 col-2">
+                <form>
+                    <h5 class="questions-text">Des questions ?</h5>
+                    <div class="row">
+                        <div class="form-group inline">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Nom">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Prénom">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Description">
+                            </div>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Prénom">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="E-mail">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Description">
+                        <div class="formulaire">
+                            <a href="#" class="button-formulaire">Soumettre</a>
                         </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-        <div class="formulaire">
-            <a href="#" class="button-formulaire">Soumettre</a>
-        </div>
-    </section>
+    </div>
+</footer>
+
+
 
 </html>

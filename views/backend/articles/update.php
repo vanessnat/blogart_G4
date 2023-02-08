@@ -11,21 +11,7 @@ include '../../../header.php';
 
 $numArt = $_GET['numArt'];
 $article = sql_select("article", "*", "numArt = $numArt")[0];
-/*
-$dtCreArt = sql_select("article", "dtCreArt", "numArt = $numArt")[0]['dtCreArt']; 
-$libTitrArt = sql_select("article", "libTitrArt", "numArt = $numArt")[0]['libTitrArt']; 
-$libChapoArt = sql_select("article", "libChapoArt", "numArt = $numArt")[0]['libChapoArt']; 
-$libAccrochArt = sql_select("article", "libAccrochArt", "numArt = $numArt")[0]['libAccrochArt']; 
-$parag1Art = sql_select("article", "parag1Art", "numArt = $numArt")[0]['parag1Art']; 
-$libSsTitr1Art = sql_select("article", "libSsTitr1Art", "numArt = $numArt")[0]['libSsTitr1Art']; 
-$parag2Art = sql_select("article", "parag2Art", "numArt = $numArt")[0]['parag2Art']; 
-$libSsTitr2Art = sql_select("article", "libSsTitr2Art", "numArt = $numArt")[0]['libSsTitr2Art']; 
-$parag3Art = sql_select("article", "parag3Art", "numArt = $numArt")[0]['parag3Art']; 
-$libConclArt = sql_select("article", "libConclArt", "numArt = $numArt")[0]['libConclArt']; 
-$urlPhotArt = sql_select("article", "urlPhotArt", "numArt = $numArt")[0]['urlPhotArt']; 
-$numThem = sql_select("article", "numThem", "numArt = $numArt")[0]['numThem']; 
-*/
-
+$thematiques = sql_select("thematique", "*");
 ?>
 
 
@@ -61,16 +47,19 @@ $numThem = sql_select("article", "numThem", "numArt = $numArt")[0]['numThem'];
                     <input id="libConclArt" class="form-control" type="text" name="libConclArt" value="<?php echo ($article['libConclArt'])?>">
                     <label for="urlPhotArt">Illustration</label>
                     <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt" value="<?php echo ($article['urlPhotArt'])?>" accept="image/png, image/jpeg">
-                    <label for="numThem">Thématique</label>
-                    <select id="numThem" class="form-control" type="text" name="numThem" value="<?php echo ($article['numThem'])?>">
-                    <option value="">--Choisissez un thème--</option>
-                    <option value="dog">Histoires et secrets</option>
-                    <option value="cat">Lieux et monuments</option>
-                    <option value="hamster">Actualités</option>
+                    
+                    <label for="numThem" class="title">Thématiques</label>  
+                    <select name="numThem" >
+                    <option value="">--Choisissez un thème--</option> 
+                    <?php foreach($thematiques as $thematique){ ?>
+                    <option value="<?php echo $thematique['numThem']; ?>"><?php echo $thematique['libThem']; ?></option> 
+                    <?php } ?>
                     </select>
+                    </select>
+                    
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary">Mettre à jour l'article</button>
                 </div>
             </form>
         </div>

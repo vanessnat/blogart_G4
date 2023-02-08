@@ -1,6 +1,6 @@
 <?php
 include '../../../header.php';
-
+$thematiques = sql_select("thematique", "*");
 ?>
 
 <!--Bootstrap form to create a new article-->
@@ -20,36 +20,48 @@ include '../../../header.php';
                 <div class="form-group">
                     <label for="dtCreArt">Date</label>
                     <input id="dtCreArt" class="form-control" type="datetime-local" name="dtCreArt">
+
                     <label for="libTitrArt">Titre</label>
                     <input id="libTitrArt" class="form-control" type="text" name="libTitrArt">
+
                     <label for="libChapoArt">Chapô</label>
                     <input id="libChapoArt" class="form-control" type="text" name="libChapoArt">
+
                     <label for="libAccrochArt">Accroche</label>
                     <input id="libAccrochArt" class="form-control" type="text" name="libAccrochArt">
+
                     <label for="parag1Art">Paragraphe 1</label>
                     <input id="parag1Art" class="form-control" type="text-area" name="parag1Art">
+
                     <label for="libSsTitr1Art">Sous-titre 1</label>
                     <input id="libSsTitr1Art" class="form-control" type="text" name="libSsTitr1Art">
+
                     <label for="parag2Art">Paragraphe 2</label>
                     <input id="parag2Art" class="form-control" type="text-area" name="parag2Art">
+
                     <label for="libSsTitr2Art">Sous-titre 2</label>
                     <input id="libSsTitr2Art" class="form-control" type="text" name="libSsTitr2Art">
+
                     <label for="parag3Art">Paragraphe 3</label>
                     <input id="parag3Art" class="form-control" type="text-area" name="parag3Art">
+
                     <label for="libConclArt">Conclusion</label>
                     <input id="libConclArt" class="form-control" type="text" name="libConclArt">
+
                     <label for="urlPhotArt">Illustration</label>
                     <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt">
-                    <label for="numThem">Thématique</label>
-                    <select id="numThem" class="form-control" type="text" name="numThem">
-                    <option value="">--Choisissez un thème--</option>
-                    <option value="dog">Histoires et secrets</option>
-                    <option value="cat">Lieux et monuments</option>
-                    <option value="hamster">Actualités</option>
+
+                    <label for="numThem" class="title">Thématiques</label>  
+                    <select name="numThem" >
+                    <option value="">--Choisissez un thème--</option> 
+                    <?php foreach($thematiques as $thematique){ ?>
+                    <option value="<?php echo $thematique['numThem']; ?>"><?php echo $thematique['libThem']; ?></option> 
+                    <?php } ?>
                     </select>
+
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-primary">Créer l'article</button>
                 </div>
             </form>
         </div>

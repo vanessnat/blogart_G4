@@ -52,8 +52,6 @@ include '../../header.php';
                             <td>
                                 <a href="/views/backend/thematiques/list.php" class="btn btn-primary disabled">List</a>
                                 <a href="/views/backend/thematiques/create.php" class="btn btn-success disabled">Create</a>
-                                <a href="/views/backend/thematiques/update.php" class="btn btn-warning disabled">Edit</a>
-                                <a href="/views/backend/thematiques/delete.php" class="btn btn-danger disabled">Delete</a>
                             </td>
                             <td></td>
                         </tr>
@@ -80,10 +78,8 @@ include '../../header.php';
                         <tr>
                             <td>Keywords</td>
                             <td>
-                                <a href="/views/backend/keywords/list.php" class="btn btn-primary disabled">List</a>
-                                <a href="/views/backend/keywords/create.php" class="btn btn-success disabled">Create</a>
-                                <a href="/views/backend/keywords/update.php" class="btn btn-warning disabled">Edit</a>
-                                <a href="/views/backend/keywords/delete.php" class="btn btn-danger disabled">Delete</a>
+                                <a href="/views/backend/keywords/list.php" class="btn btn-primary">List</a>
+                                <a href="/views/backend/keywords/create.php" class="btn btn-success">Create</a>
                             </td>
                             <td></td>
                         </tr>

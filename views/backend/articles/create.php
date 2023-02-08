@@ -4,11 +4,16 @@ include '../../../header.php';
 ?>
 
 <!--Bootstrap form to create a new article-->
+<Body style="background-color: #ECECEC">
+<img src="/src/css/Accueil Image.png" class="img-fluid">
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Create new Article</h1>
+    <div class="card text-bg">
+        <img src="/src/css/Marbre 1.png" class="img-fluid" class="card-img">
+        <div class="card-img-overlay">
+            <h1 class="card-title text-center">Création d'articles</h1>
         </div>
+    </div>
+    <div class="row">
         <div class="col-md-12">
             <!--Form to create a new article-->
             <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
@@ -50,3 +55,8 @@ include '../../../header.php';
         </div>
     </div>
 </div>
+
+<?php
+include '../../../footer.php';
+
+?>

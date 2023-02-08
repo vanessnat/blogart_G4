@@ -18,28 +18,37 @@ require_once 'config.php';
 ?>
 <body>
 
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">BlogArt</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/views/backend/dashboard.php">Admin</a>
-        </li>
-      </ul>
-    </div>
-    <!--right align-->
-    <div class="d-flex">
-      <a class="btn btn-primary m-1" href="/views/backend/login.php" role="button">Login</a>
-      <a class="btn btn-dark m-1" href="/views/backend/register.php" role="button">Register</a>
-      <a class="btn btn-primary m-1" href="/views/backend/login.php" role="button">Mon compte</a>
-    </div>
-  </div>
-</nav>
+<header>
+        <nav class="navbar navbar-expand-lg" style="background-color: #093D4D; ">
+            <div class="container">
+            <a class="navbar-brand" href="/views/frontend/Accueil.html">
+                <img src="/src/css/Logo 2.jpg" alt="logo" width="85" height="84">
+            </a>
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#" >Histoires et secrets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#" >Lieux et monuments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#" >Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/register.php" >S'inscrire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/login.php" >Se connecter</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active text-white" aria-current="page" href="/views/backend/dashboard.php">Mon compte</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#" >Eng | Fr</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+</header>
 

@@ -89,11 +89,13 @@ header {
 }
 
 .marbre-intro {
-    background: url(Marbre\ 1.png);
+    background: url(/src/css/Marbre\ 1.png);
     width: 600px;
     height: 350px;
     border-radius: 19.0144px;
     margin-top: -180px;
+    box-shadow: 0px 2.51686px 0px #D6DADF, -2.51686px -2.51686px 0px #FFFFFF, 0px 38px 58.7267px -8.38953px rgba(169, 180, 203, 0.2), inset 0px -16.7791px 16.7791px rgba(255, 255, 255, 0.2);
+    filter: blur(0.419477px);
 }
 
 .text-intro{
@@ -113,9 +115,9 @@ header {
 .paragraphe-intro{
     display: flex;
     text-align: left;
-    padding-left: 40px;
-    padding-right: 30px;
-    padding-bottom: 28px;
+    margin-left: 40px;
+    margin-right: 30px;
+    margin-top: 35px;
     font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 300;
@@ -153,7 +155,7 @@ header {
 .categories{
     display: flex;
     justify-content: center;
-    height: 7cm;
+    height: 5cm;
     padding-top: 200px;
 }
 
@@ -170,14 +172,12 @@ header {
 
 .buttons{
     float: left;
-    align-items: baseline;
-    justify-content: space-between;
 }
 
 .button-histsecrets{
-    background: url(Marbre\ 1.png);
+    background: url(/src/css/Marbre\ 1.png);
     border: none;
-    padding: 35px;
+    margin-left: 35px;
     text-align: center;
     text-decoration: none;
     font-family: 'Josefin Sans';
@@ -192,9 +192,10 @@ header {
 }
 
 .button-lieuxmonuments{
-    background: url(Marbre\ 1.png);
+    background: url(/src/css/Marbre\ 1.png);
     border: none;
-    padding: 35px;
+    margin-left: 35px;
+    margin-right: 35px;
     text-align: center;
     text-decoration: none;
     font-family: 'Josefin Sans';
@@ -209,9 +210,9 @@ header {
 }
 
 .button-actualites{
-    background: url(Marbre\ 1.png);
+    background: url(/src/css/Marbre\ 1.png);
     border: none;
-    padding: 35px;
+    margin-right: 35px;
     text-align: center;
     text-decoration: none;
     font-family: 'Josefin Sans';
@@ -235,7 +236,7 @@ header {
     display: flex;
     width: 914px;
     height: 348px;
-    background: url(Marbre\ 1.png);
+    background: url(/src/css/Marbre\ 1.png);
     border-radius: 20px;
     padding: 5px;
     margin-top: 114px;
@@ -245,7 +246,7 @@ header {
     width: 457px;
     height: 200px;
     border-radius: 19px 0px 0px 19px;
-    background-image: url(Alphonse\ bertillon.jpg);
+    background-image: url(/src/css/Alphonse\ bertillon.jpgg);
     object-fit: fill;
 }
 
@@ -278,7 +279,7 @@ header {
     position: absolute;
     width: 914px;
     height: 348px;
-    background: url(Marbre\ 1.png);
+    background: url(/src/css/Marbre\ 1.png);
     border-radius: 20px;
     padding: 15px 32px;
     margin-top: 101px;
@@ -297,8 +298,8 @@ header {
 
 .logo-footer{
     position: absolute;
-    width: 152px;
-    height: 151px;
+    width: 172px;
+    height: 171px;
     padding: 40px;
     margin-bottom: 100px;
 }
@@ -365,16 +366,7 @@ header {
     border-radius: 7px;
 }
 
-<div class="footer-questions">
-                <h3 class="text-questions">Des questions ?</h3>
-                <div class="formulaire-questions">
-                    <div class="formulaire-nom">Nom</div>
-                    <div class="formulaire-prenom">Prénom</div>
-                    <div class="formualire-email">E-mail</div>
-                    <div class="formulaire-description">Description</div>
-                </div>
-                </div>
-            </div>
+
 
 
 

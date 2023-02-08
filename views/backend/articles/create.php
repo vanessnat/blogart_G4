@@ -5,10 +5,10 @@ include '../../../header.php';
 
 <!--Bootstrap form to create a new article-->
 <Body style="background-color: #ECECEC">
+<link rel="stylesheet" href="/src/css/style.css">
 <img src="/src/css/Accueil Image.png" class="img-fluid">
 <div class="container">
-    <div class="card text-bg">
-        <img src="/src/css/Marbre 1.png" class="img-fluid" class="card-img">
+    <div class="card text-bg card-box" >
         <div class="card-img-overlay">
             <h1 class="card-title text-center">Création d'articles</h1>
         </div>
@@ -18,38 +18,57 @@ include '../../../header.php';
             <!--Form to create a new article-->
             <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
                 <div class="form-group">
-                    <label for="dtCreArt">Date</label>
-                    <input id="dtCreArt" class="form-control" type="datetime-local" name="dtCreArt">
                     <label for="libTitrArt">Titre</label>
-                    <input id="libTitrArt" class="form-control" type="text" name="libTitrArt">
+                    <input id="libTitrArt" class="form-control" type="text-area" name="libTitrArt">
+                </div>
+                <div class="form-group">
                     <label for="libChapoArt">Chapô</label>
-                    <input id="libChapoArt" class="form-control" type="text" name="libChapoArt">
+                    <input id="libChapoArt" class="form-control" type="text-area" name="libChapoArt">
+                </div>
+                <div class="form-group">
                     <label for="libAccrochArt">Accroche</label>
-                    <input id="libAccrochArt" class="form-control" type="text" name="libAccrochArt">
+                    <input id="libAccrochArt" class="form-control" type="text-area" name="libAccrochArt">
+                </div>
+                <div class="form-group">
                     <label for="parag1Art">Paragraphe 1</label>
                     <input id="parag1Art" class="form-control" type="text-area" name="parag1Art">
+                </div>
+                <div class="form-group">
                     <label for="libSsTitr1Art">Sous-titre 1</label>
-                    <input id="libSsTitr1Art" class="form-control" type="text" name="libSsTitr1Art">
+                    <input id="libSsTitr1Art" class="form-control" type="text-area" name="libSsTitr1Art">
+                </div>
+                <div class="form-group">
                     <label for="parag2Art">Paragraphe 2</label>
                     <input id="parag2Art" class="form-control" type="text-area" name="parag2Art">
+                </div>
+                <div class="form-group">
                     <label for="libSsTitr2Art">Sous-titre 2</label>
-                    <input id="libSsTitr2Art" class="form-control" type="text" name="libSsTitr2Art">
+                    <input id="libSsTitr2Art" class="form-control" type="text-area" name="libSsTitr2Art">
+                </div>
+                <div class="form-group">
                     <label for="parag3Art">Paragraphe 3</label>
                     <input id="parag3Art" class="form-control" type="text-area" name="parag3Art">
+                </div>
+                <div class="form-group">
                     <label for="libConclArt">Conclusion</label>
-                    <input id="libConclArt" class="form-control" type="text" name="libConclArt">
+                    <input id="libConclArt" class="form-control" type="text-area" name="libConclArt">
+                </div>
+                <div class="form-group">
                     <label for="urlPhotArt">Illustration</label>
                     <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt">
+                </div>
+                <div class="form-group">
                     <label for="numThem">Thématique</label>
-                    <select id="numThem" class="form-control" type="text" name="numThem">
+                    <select id="numThem" class="form-control" type="text-area" name="numThem">
+                </div>
                     <option value="">--Choisissez un thème--</option>
-                    <option value="dog">Histoires et secrets</option>
-                    <option value="cat">Lieux et monuments</option>
-                    <option value="hamster">Actualités</option>
+                    <option value="Histoires">Histoires et secrets</option>
+                    <option value="Lieux">Lieux et monuments</option>
+                    <option value="Actualités">Actualités</option>
                     </select>
                 </div>
-                <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Create</button>
+                <div class="form-group mt-2 text-center">
+                    <for button type="submit" class="btn">Publier</button>
                 </div>
             </form>
         </div>

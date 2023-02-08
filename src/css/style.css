@@ -74,9 +74,6 @@ header {
 }
 
 
-.container {
-    display: flex;
-}
 
 
 
@@ -143,7 +140,6 @@ header {
 .classe-titres {
     display: flex;
     justify-content: center;
-    font-family: 'Josephin Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 96px;
@@ -155,23 +151,24 @@ header {
 .categories{
     display: flex;
     justify-content: center;
-    height: 395px;
-    padding-top: 200px;
+    padding-top: 100px;
+    padding-bottom: 138px;
 }
 
 .categories-text{
-    position: absolute;
-    font-family: 'Josefin Sans';
+    margin-bottom: 40px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 48px;
-    line-height: 48px;
+    line-height: 40px;
     color: #093D4D;
     margin-left: 152px;
+    margin-top: 90px;
 }
 
 .buttons{
     float: left;
+    margin:50px;
 }
 
 .button-histsecrets{
@@ -181,7 +178,6 @@ header {
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
@@ -190,6 +186,7 @@ header {
     color: #093D4C;
     border-radius: 20px;
     transform: matrix(0, -1, 1, 0, 0, 0);
+    box-shadow: 0px 2.51686px 0px #D6DADF, -2.51686px -2.51686px 0px #FFFFFF, 0px 38px 58.7267px -8.38953px rgba(169, 180, 203, 0.2), inset 0px -16.7791px 16.7791px rgba(255, 255, 255, 0.2);
 }
 
 .button-lieuxmonuments{
@@ -200,7 +197,6 @@ header {
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
@@ -209,6 +205,7 @@ header {
     color: #093D4C;
     border-radius: 20px;
     transform: matrix(0, -1, 1, 0, 0, 0);
+    box-shadow: 0px 2.51686px 0px #D6DADF, -2.51686px -2.51686px 0px #FFFFFF, 0px 38px 58.7267px -8.38953px rgba(169, 180, 203, 0.2), inset 0px -16.7791px 16.7791px rgba(255, 255, 255, 0.2);
 }
 
 .button-actualites{
@@ -218,7 +215,6 @@ header {
     padding: 20px;
     text-align: center;
     text-decoration: none;
-    font-family: 'Josefin Sans';
     font-style: normal;
     font-weight: 500;
     font-size: 28px;
@@ -226,6 +222,7 @@ header {
     color: #093D4C;
     border-radius: 15px;
     transform: matrix(0, -1, 1, 0, 0, 0);
+    box-shadow: 0px 2.51686px 0px #D6DADF, -2.51686px -2.51686px 0px #FFFFFF, 0px 38px 58.7267px -8.38953px rgba(169, 180, 203, 0.2), inset 0px -16.7791px 16.7791px rgba(255, 255, 255, 0.2);
 }
 
 .articles1{
@@ -289,9 +286,7 @@ header {
 }
 
 .footer{
-    position: absolute;
-    width: 1220px;
-    height: 8cm;
+    padding: 50px 0px;
     background: #093D4C;
 }
 
@@ -340,15 +335,13 @@ header {
 }
 
 .questions-text{
-    display: flex;
     color:#FFFFFF;
-    justify-content: center;
-    margin-top: 40px;
-    margin-left: 64px;
+    margin-bottom: 20px;
 }
 
 .formulaire{
     display: flex;
+    justify-content: end;
 }
 
 .button-formulaire{
@@ -368,3 +361,51 @@ header {
     text-decoration: none;
 }
 
+
+.card-box{
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden;
+    background-image: url(/src/css/Marbre\ 1.png);
+    background-size: cover;
+    box-shadow: 0px 2.51686px 0px #D6DADF, -2.51686px -2.51686px 0px #FFFFFF, 0px 38px 58.7267px -8.38953px rgba(169, 180, 203, 0.2), inset 0px -16.7791px 16.7791px rgba(255, 255, 255, 0.2);
+}
+
+.bloc-intro{
+    width: 700px;
+    padding: 30px 40px;
+    margin: auto;
+    border-radius: 30px;
+    overflow: hidden ;
+    height: 250px;
+    background-image: url(/src/css/Marbre\ 1.png);
+    background-size: cover;
+    overflow: hidden ;
+    box-shadow: 0px 2.51686px 0px #D6DADF, -2.51686px -2.51686px 0px #FFFFFF, 0px 38px 58.7267px -8.38953px rgba(169, 180, 203, 0.2), inset 0px -16.7791px 16.7791px rgba(255, 255, 255, 0.2);
+}
+
+.img-bertillon{
+    width: 100%;
+}
+
+.section-articles{
+    padding: 0px 140px;
+}
+
+.lien-footer{
+    color: white
+}
+
+.form-control{
+    margin: 10px 0;
+}
+
+.iframe{
+    width: 50%;
+    margin: auto;
+    height: 500px;
+}
+
+.navbar{
+    text-align: center;
+}

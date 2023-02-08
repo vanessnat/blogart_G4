@@ -8,34 +8,37 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$members= sql_select("membre", "*");
+$users= sql_select("membre", "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Article</h1>
+            <h1>Membres</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th>Titre</th>
-                        <th>Chapô</th>
+                        <th>Prénom</th>
+                        <th>Nom</th>
+                        <th>Pseudo</th>
+                        <th>Mot de passe</th>
+                        <th>Email</th>
                         <th>Date</th>
-                        <th>Mots-clés</th>
-                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($articles as $article) { ?>
+                    <?php foreach ($users as $membre) { ?>
                         <tr>
-                            <td><?php echo $article['libTitrArt']; ?></td>
-                            <td><?php echo $article['libChapoArt']; ?></td>
-                            <td><?php echo $article['dtCreArt']; ?></td>
-                            <td><?php echo $article['numThem']; ?></td>
+                            <td><?php echo $membre['prenomMemb']; ?></td>
+                            <td><?php echo $membre['nomMemb']; ?></td>
+                            <td><?php echo $membre['pseudoMemb']; ?></td>
+                            <td><?php echo $membre['passMemb']; ?></td>
+                            <td><?php echo $membre['eMailMemb']; ?></td>
+                            <td><?php echo $membre['dtCreaMemb']; ?></td>
                             <td>
-                                <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="update.php?numMemb=<?php echo $membre['numMemb']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="delete.php?numMemb=<?php echo $membre['numMemb']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>

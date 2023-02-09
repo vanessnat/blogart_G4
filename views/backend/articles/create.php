@@ -7,10 +7,10 @@ include '../../../header.php';
 <Body style="background-color: #ECECEC">
 <link rel="stylesheet" href="/src/css/style.css">
 <img src="/src/css/Accueil Image.png" class="img-fluid">
-<div class="container">
-    <div class="card text-bg card-box" >
+<div class="container-create">
+    <div class="card text-bg bloc-article">
         <div class="card-img-overlay">
-            <h1 class="card-title text-center">Création d'articles</h1>
+            <h1 class="card-title text-center creat-article">Création d'articles</h1>
         </div>
     </div>
     <div class="row">
@@ -29,25 +29,22 @@ include '../../../header.php';
                     <label for="libAccrochArt">Accroche</label>
                     <input id="libAccrochArt" class="form-control" type="text-area" name="libAccrochArt">
                 </div>
-                <div class="form-group">
-                    <label for="parag1Art">Paragraphe 1</label>
-                    <input id="parag1Art" class="form-control" type="text-area" name="parag1Art">
+                <div class="paragraphe">
+                    <h4>Paragraphe 1</h4>
                 </div>
                 <div class="form-group">
                     <label for="libSsTitr1Art">Sous-titre 1</label>
                     <input id="libSsTitr1Art" class="form-control" type="text-area" name="libSsTitr1Art">
                 </div>
-                <div class="form-group">
-                    <label for="parag2Art">Paragraphe 2</label>
-                    <input id="parag2Art" class="form-control" type="text-area" name="parag2Art">
+                <div class="paragraphe">
+                    <h4>Paragraphe 2</h4>
                 </div>
                 <div class="form-group">
                     <label for="libSsTitr2Art">Sous-titre 2</label>
                     <input id="libSsTitr2Art" class="form-control" type="text-area" name="libSsTitr2Art">
                 </div>
-                <div class="form-group">
-                    <label for="parag3Art">Paragraphe 3</label>
-                    <input id="parag3Art" class="form-control" type="text-area" name="parag3Art">
+                <div class="paragraphe">
+                    <h4>Paragraphe 3</h4>
                 </div>
                 <div class="form-group">
                     <label for="libConclArt">Conclusion</label>

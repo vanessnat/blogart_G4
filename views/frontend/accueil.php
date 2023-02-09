@@ -86,9 +86,9 @@
                     </div>
                     <div class="mots-cles">
                         <div class="button-mot">
-                            <a href="#" class="criminologie">Criminologie</a>
-                            <a href="#" class="exposition">Exposition</a>
-                            <a href="#" class="bordeaux">Bordeaux</a>
+                            <a href="#" class="btn" role="button" data-bs-toggle="button">criminologie</a>
+                            <a href="#" class="btn" role="button" data-bs-toggle="button">exposition</a>
+                            <a href="#" class="btn" role="button" data-bs-toggle="button">bordeaux</a>
                         </div>
                     </div>
                     <div class="plus">
@@ -139,77 +139,3 @@
 include '../../../footer.php';
 
 ?>
-
-
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-2 col-12">
-                <img class="logo-footer" src="/src/css/Logo 2.jpg">
-            </div>
-            <div class="col-lg-3 col-12">
-                <ul class="list-footer">
-                    <li>
-                        <a href="#" class="lien-footer">Tous nos articles</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lien-footer">Histoires et secrets</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lien-footer">Lieux et monuments</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lien-footer">Actualités</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lien-footer">Contact</a> 
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-12">
-                <ul class="list-footer">
-                    <li>
-                        <a href="#" class="lien-footer">À propos</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lien-footer">Compte</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lien-footer">Se connecter</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lien-footer">S'inscrire</a>
-                    </li>
-                    <li>
-                        <a href="#" class="lien-footer">Mentions légales</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-4 col-2">
-                <form>
-                    <h5 class="questions-text">Des questions ?</h5>
-                    <div class="row">
-                        <div class="form-group inline">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Nom">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Prénom">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="E-mail">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Description">
-                            </div>
-                        </div>
-                        <div class="formulaire">
-                            <a href="#" class="button-formulaire">Soumettre</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</footer>
-</html>

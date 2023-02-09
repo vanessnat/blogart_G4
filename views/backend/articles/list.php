@@ -11,38 +11,56 @@ include '../../../header.php'; // contains the header and call to config.php
 $articles = sql_select("article", "*");
 ?>
 
+<Body style="background-color: #ECECEC">
+<link rel="stylesheet" href="/src/css/style.css">
+<img src="/src/css/Accueil Image.png" class="img-fluid">
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Article</h1>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Titre</th>
-                        <th>Chapô</th>
-                        <th>Date</th>
-                        <th>Mots-clés</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
+            <div class="bloc-article2">
+                <h1 class="choix-arttext">Articles</h1>
+            </div>
+            <tbody>
+                <section class="section-articles-card">
                     <?php foreach ($articles as $article) { ?>
-                        <tr>
-                            <td><?php echo $article['libTitrArt']; ?></td>
-                            <td><?php echo $article['libChapoArt']; ?></td>
-                            <td><?php echo $article['dtCreArt']; ?></td>
-                            <td><?php echo $article['numThem']; ?></td>
-                            <td>
-                                <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>
-                            </td>
-                        </tr>
+                        <div class="card-articles">
+                            <div class="card-article1">
+                                <div class="row align-items-center">
+                                    <div class="texts">
+                                        <div class="titre-art">
+                                            <?php echo $article['libTitrArt']; ?>
+                                        </div>
+                                        <div class="chapo-art">
+                                            <?php echo $article['libChapoArt']; ?>
+                                        </div>
+                                        <div class="date-art">
+                                            <?php echo $article['dtCreArt']; ?>
+                                        </div>
+                                        <div class="mots-art">
+                                            <?php echo $article['numThem']; ?>
+                                        </div>
+                                        <div class="but-art">
+                                            <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-edit">Edit</a>
+                                            <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-delet">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <?php } ?>
-                </tbody>
-            </table>
-            <a href="create.php" class="btn btn-success">Create</a>
+                </section>
+                <section>
+                    <div class="create-articles">
+                        <a href="create.php" class="btn btn-success">Create</a>
+                    </div>
+                </section>
+            </tbody>
         </div>
     </div>
+</div>
 
 <?php
 include '../../../footer.php'; // contains the footer
+
+?>

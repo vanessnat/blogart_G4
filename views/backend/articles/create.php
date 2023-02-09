@@ -16,7 +16,7 @@ $thematiques = sql_select("thematique", "*");
     <div class="row">
         <div class="col-md-12">
             <!--Form to create a new article-->
-            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post" enctype='multipart/form-data'>
                 <div class="form-group">
                     <label for="dtCreArt">Date</label>
                     <input id="dtCreArt" class="form-control" type="datetime-local" name="dtCreArt">
@@ -58,8 +58,6 @@ $thematiques = sql_select("thematique", "*");
                     <label for="libConclArt">Conclusion</label>
                     <input id="libConclArt" class="form-control" type="text" name="libConclArt">
 
-                    <label for="urlPhotArt">Illustration</label>
-                    <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt">
 
                     <label for="numThem" class="title">Thématiques</label>  
                     <select name="numThem" >
@@ -68,6 +66,8 @@ $thematiques = sql_select("thematique", "*");
                     <option value="<?php echo $thematique['numThem']; ?>"><?php echo $thematique['libThem']; ?></option> 
                     <?php } ?>
                     </select>
+
+                    <input type="file" name="file" id="file"> 
 
                 </div>
                 <div class="form-group mt-2">

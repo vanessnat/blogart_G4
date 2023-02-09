@@ -11,7 +11,7 @@ include '../../header.php';
         </div>
         <div class="col-md-12">
             <!--Form to create a new member-->
-            <form action="<?php echo ROOT_URL . '/api/users/create.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/register/create.php' ?>" method="post">
                 <div class="form-group">
                     <label for="prenomMemb">Prénom</label>
                     <input id="prenomMemb" class="form-control" type="text" name="prenomMemb" required>
@@ -20,17 +20,14 @@ include '../../header.php';
                     <label for="pseudoMemb">Pseudo</label>
                     <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" required>
                     <label for="passMemb">Mot-de-passe</label>
-                    <input id="passMemb" class="form-control" type="text" name="passMemb" required>
-                    <label for="passMemb">Confimez le mot-de-passe</label>
-                    <input id="passMemb" class="form-control" type="password" name="passMemb"  minlength="8" required>
+                    <input id="passMemb" class="form-control" type="password" name="passMemb" minlength="8" required>
+
                     <label for="eMailMemb">E-mail</label>
                     <input id="eMailMemb" class="form-control" type="email" name="eMailMemb"  size="30" required>
-                    <label for="eMailMemb">Confirmez l'e-mail</label>
-                    <input id="eMailMemb" class="form-control" type="email" name="eMailMemb"  size="30" required>
-                    <input id="numStat" style="display: none" class="form-control" type="text" name="numStat" >
+
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                    <button type= "submit" class="btn btn-primary">S'inscrire</button>
                 </div>
             </form>
         </div>

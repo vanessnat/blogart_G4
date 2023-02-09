@@ -25,7 +25,7 @@ include '../../../header.php';
                     <input id="eMailMemb" class="form-control" type="email" name="eMailMemb"  size="30" required>
                     <label for="numStat">Statut</label>
                     <input id="numStat" class="form-control" type="text" name="numStat" >
-                </div>
+                    </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Create</button>
                 </div>

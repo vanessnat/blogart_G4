@@ -11,7 +11,7 @@ include '../../../header.php';
 
 
 $likeA = $_GET['LlikeA'];
-$likeA = sql_select("likes", "likeA", "numArt" "numMemb = $numMemb")[0]['nomMemb']; 
+$likeA = sql_select("likes", "likeA", "numArt", "numMemb = $numMemb")[0]['nomMemb']; 
 
 ?>
 

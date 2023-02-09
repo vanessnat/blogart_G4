@@ -14,9 +14,9 @@ include '../../header.php';
             <form action="<?php echo ROOT_URL . '/members/list.php' ?>" method="post">
                 <div class="form-group">
                     <label for="pseudoMemb">Pseudo</label>
-                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" required>
+                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" value="" required>
                     <label for="passMemb">Mot-de-passe</label>
-                    <input id="passMemb" class="form-control" type="text" name="passMemb" required>
+                    <input id="passMemb" class="form-control" type="text" name="passMemb" value="" required>
                     <input id="numStat" style="display: none" class="form-control" type="text" name="numStat" >
                 </div>
                 <div class="form-group mt-2">

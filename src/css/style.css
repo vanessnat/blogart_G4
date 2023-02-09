@@ -515,17 +515,37 @@ header {
     margin-bottom: 100px;
 }
 
+.bloc-article3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    padding: 60px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden ;
+    background-image: url(/src/css/Marbre\ 1.png);
+    background-size: cover;
+    overflow: hidden ;
+    box-shadow: 0px 2.51686px 0px #D6DADF;
+    margin-top: -130px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
 .btn-create{
     background-color: #093D4C;
     border-radius: 20px; 
     padding: 50px;
-    align-content: center;
     width: 80px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .paragraphe{
@@ -639,4 +659,20 @@ header {
     width: 50px;
     padding: 40px;
     border-radius: 20px;
+}
+
+.btn-update{
+    background-color: #093D4C;
+    display: flex;
+    padding: 40px;
+    margin-right: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-groupedit{
+    width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }

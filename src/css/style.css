@@ -452,13 +452,19 @@ header {
 }
 
 .button-mot{
+    background-color: #D4DFE2;
+    color: white;
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+.box-boutons{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
     text-decoration: none;
-    padding: 10px;
-    color:#D6DADF;
-    max-width: 70px;
-    justify-content: space-between;
 }
 
 .button-lire{
@@ -691,6 +697,22 @@ header {
     padding: 30px 0px;
 }
 
+.mention-coordonnees{
+    padding: 30px 0px;
+}
+
+.mention-propint{
+    padding: 30px 0px;
+}
+
+.mention-hebsite{
+    padding: 30px 0px;
+}
+
+.mention-siteinfo{
+    padding: 30px 0px;
+}
+
 .editeur-titre{
     font-style: normal;
     font-weight: 600;
@@ -699,5 +721,109 @@ header {
     color: #093D4D;
     display: flex;
     justify-content: flex-start;
-    margin-left: 40px;
+    margin-left: 140px;
+}
+
+.editeur-sstitre{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color:#093D4C;
+    display: flex;
+    display: inline-block;
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.coordonnees-titre{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    color: #093D4D;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 140px;
+}
+
+.coordonnees-sstitre{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color:#093D4C;
+    display: flex;
+    display: inline-block;
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.propint-titre{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    color: #093D4D;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 140px;
+}
+
+.propint-sstitre{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color:#093D4C;
+    display: flex;
+    display: inline-block;
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.hebsite-titre{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    color: #093D4D;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 140px;
+}
+
+.hebsite-sstitre{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color:#093D4C;
+    display: flex;
+    display: inline-block;
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.siteinfo-titre{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    color: #093D4D;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 140px;
+}
+
+.siteinfo-sstitre{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    color:#093D4C;
+    display: flex;
+    display: inline-block;
+    margin-left: 200px;
+    padding: 30px;
 }

@@ -12,39 +12,11 @@
 </head>
 
 <body style="background-color: #ECECEC">
-    <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #093D4D; ">
-            <div class="container">
-            <a class="navbar-brand" href="/views/frontend/Accueil.html">
-                <img src="/src/css/Logo 2.jpg" alt="logo" width="85" height="84">
-            </a>
-            <div class="container-fluid">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#" >Histoires et secrets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#" >Lieux et monuments</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#" >Actualités</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/register.php" >S'inscrire</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/login.php" >Se connecter</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/dashboard.php">Mon compte</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#" >Eng | Fr</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-</header>
+
+<?php
+include '../../header.php';
+
+?>
 
     <section>
         <img src="/src/css/Accueil Image.png" class="img-fluid">
@@ -134,8 +106,9 @@
         <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11313.04051376454!2d-0.5849997921874824!3d44.8569989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5528763e4a8959%3A0x6a0782a140a43f2c!2sArchives%20d%C3%A9partementales%20de%20la%20Gironde!5e0!3m2!1sfr!2sfr!4v1675871240064!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
+</body>
 
 <?php
-include '../../../footer.php';
+include '../../footer.php'; // contains the footer
 
 ?>

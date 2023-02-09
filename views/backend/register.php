@@ -3,11 +3,16 @@ include '../../header.php';
 
 ?>
 
-<!--Bootstrap form to create a new member-->
+<Body style="background-color: #ECECEC">
+<link rel="stylesheet" href="/src/css/style.css">
+<img src="/src/css/Accueil Image.png" class="img-fluid">
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Inscription</h1>
+            <div class="bloc-article3">
+                <h1 class="choix-arttext">Inscription</h1>
+            </div>
         </div>
         <div class="col-md-12">
             <!--Form to create a new member-->
@@ -33,3 +38,8 @@ include '../../header.php';
         </div>
     </div>
 </div>
+
+<?php
+include '../../footer.php'; // contains the footer
+
+?>

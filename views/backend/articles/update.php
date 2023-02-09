@@ -87,7 +87,7 @@ $thematiques = sql_select("thematique", "*");
         </section>
         <section>
             <div class="create-articles">
-                <a href="create.php" class="btn btn-update">Update</a>
+                <button type="submit" class="btn btn-update">Update</a>
             </div>
         </section>
     </tbody>

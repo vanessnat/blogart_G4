@@ -497,12 +497,35 @@ header {
     margin-bottom: 100px;
 }
 
-.btn{
-    background: #093D4C;
+.bloc-article2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    padding: 60px;
+    margin: auto;
+    border-radius: 20px;
+    overflow: hidden ;
+    background-image: url(/src/css/Marbre\ 1.png);
+    background-size: cover;
+    overflow: hidden ;
+    box-shadow: 0px 2.51686px 0px #D6DADF;
+    margin-top: -130px;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.btn-create{
+    background-color: #093D4C;
     border-radius: 20px; 
-    padding: 15px;
+    padding: 50px;
     align-content: center;
     width: 80px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
 }
 
 .paragraphe{
@@ -514,9 +537,106 @@ header {
     padding-bottom: 80px;
 }
 
-.creat-article{
+.create-articles{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     color:#093D4C;
+    margin: 30px;
+}
+
+.btn-success{
+    background-color: #093D4C;
+    display: flex;
+    padding: 40px;
+    margin-right: 50px;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.section-articles-card{
+    display: flex;
+    display: inline-block;
+}
+
+.card-articles{
+    background-color:#FFFFFF;
+    border-radius: 20px;
+    width: 700px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titre-art{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    color: #093D4C;
+}
+
+.chapo-art{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    justify-content: flex-start;
+    color:#093D4C
+}
+
+.date-art{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    color:#093D4D;
+}
+
+.mots-art{
+    display: flex;
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #093D4D;
+}
+
+.choix-arttext{
+    display: flex;
+    color:#093D4C;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.but-art{
+    display: flex;
+    justify-content: flex-end;
+    display: inline-block;
+}
+
+.btn-edit{
+    background-color:#093D4C;
+    width: 50px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.btn-delete{
+    background-color: #093D4C;
+    width: 50px;
+    padding: 40px;
+    border-radius: 20px;
 }

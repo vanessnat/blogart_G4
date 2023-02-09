@@ -67,7 +67,7 @@ $thematiques = sql_select("thematique", "*");
 
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Créer l'article</button>
+                    <button type="submit" class="btn btn-create">Créer l'article</button>
                 </div>
             </form>
         </div>

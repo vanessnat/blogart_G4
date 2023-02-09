@@ -8,14 +8,14 @@ include '../../../header.php'; // contains the header and call to config.php
 } */
 
 //Load all statuses
-$articles = sql_select("article", "*");
+$likes = sql_select("likeart", "*");
 ?>
 
 <!-- Bootstrap default layout to display all status in foreach -->
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Article</h1>
+            <h1>Liste des J'aime</h1>
             <table class="table table-striped">
                 <thead>
                     <tr>

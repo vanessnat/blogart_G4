@@ -16,7 +16,7 @@ $libConclArt = sql_escape($_POST['libConclArt']);
 $urlPhotArt = sql_escape($_POST['urlPhotArt']);
 $numThem = sql_escape($_POST['numThem']);
 
-sql_insert('article', "dtCreArt, libTitrArt, libChapoArt, libAccrochArt, parag1Art, libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art,libConclArt, urlPhotArt, numThem", "$dtCreArt, '$libTitrArt', '$libChapoArt', '$libAccrochArt', '$parag1Art', '$libSsTitr1Art', '$parag2Art', '$libSsTitr2Art', '$parag3Art', '$libConclArt', '$urlPhotArt', $numThem");
+sql_insert('article', "dtCreArt, libTitrArt, libChapoArt, libAccrochArt, parag1Art, libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art,libConclArt, urlPhotArt, numThem", "'$dtCreArt', '$libTitrArt', '$libChapoArt', '$libAccrochArt', '$parag1Art', '$libSsTitr1Art', '$parag2Art', '$libSsTitr2Art', '$parag3Art', '$libConclArt', '$urlPhotArt', $numThem");
 
 header('Location: ../../views/backend/articles/list.php');
 ?>

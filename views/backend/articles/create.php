@@ -1,6 +1,6 @@
 <?php
 include '../../../header.php';
-
+$thematiques = sql_select("thematique", "*");
 ?>
 
 <!--Bootstrap form to create a new article-->
@@ -18,54 +18,56 @@ include '../../../header.php';
             <!--Form to create a new article-->
             <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
                 <div class="form-group">
+                    <label for="dtCreArt">Date</label>
+                    <input id="dtCreArt" class="form-control" type="datetime-local" name="dtCreArt">
+
                     <label for="libTitrArt">Titre</label>
-                    <input id="libTitrArt" class="form-control" type="text-area" name="libTitrArt">
-                </div>
-                <div class="form-group">
+                    <input id="libTitrArt" class="form-control" type="text" name="libTitrArt">
+
                     <label for="libChapoArt">Chapô</label>
-                    <input id="libChapoArt" class="form-control" type="text-area" name="libChapoArt">
-                </div>
-                <div class="form-group">
+                    <input id="libChapoArt" class="form-control" type="text" name="libChapoArt">
+
                     <label for="libAccrochArt">Accroche</label>
                     <input id="libAccrochArt" class="form-control" type="text-area" name="libAccrochArt">
                 </div>
-                <div class="paragraphe">
-                    <h4>Paragraphe 1</h4>
+                <div class="form-group">
+                    <label for="parag1Art">Paragraphe 1</label>
+                    <input id="parag1Art" class="form-control" type="text-area" name="parag1Art">
                 </div>
                 <div class="form-group">
                     <label for="libSsTitr1Art">Sous-titre 1</label>
                     <input id="libSsTitr1Art" class="form-control" type="text-area" name="libSsTitr1Art">
                 </div>
-                <div class="paragraphe">
-                    <h4>Paragraphe 2</h4>
+                <div class="form-group">
+                    <label for="parag2Art">Paragraphe 2</label>
+                    <input id="parag2Art" class="form-control" type="text-area" name="parag2Art">
                 </div>
                 <div class="form-group">
                     <label for="libSsTitr2Art">Sous-titre 2</label>
                     <input id="libSsTitr2Art" class="form-control" type="text-area" name="libSsTitr2Art">
                 </div>
-                <div class="paragraphe">
-                    <h4>Paragraphe 3</h4>
+                <div class="form-group">
+                    <label for="parag3Art">Paragraphe 3</label>
+                    <input id="parag3Art" class="form-control" type="text-area" name="parag3Art">
                 </div>
                 <div class="form-group">
                     <label for="libConclArt">Conclusion</label>
-                    <input id="libConclArt" class="form-control" type="text-area" name="libConclArt">
-                </div>
-                <div class="form-group">
+                    <input id="libConclArt" class="form-control" type="text" name="libConclArt">
+
                     <label for="urlPhotArt">Illustration</label>
                     <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt">
-                </div>
-                <div class="form-group">
-                    <label for="numThem">Thématique</label>
-                    <select id="numThem" class="form-control" type="text-area" name="numThem">
-                </div>
-                    <option value="">--Choisissez un thème--</option>
-                    <option value="Histoires">Histoires et secrets</option>
-                    <option value="Lieux">Lieux et monuments</option>
-                    <option value="Actualités">Actualités</option>
+
+                    <label for="numThem" class="title">Thématiques</label>  
+                    <select name="numThem" >
+                    <option value="">--Choisissez un thème--</option> 
+                    <?php foreach($thematiques as $thematique){ ?>
+                    <option value="<?php echo $thematique['numThem']; ?>"><?php echo $thematique['libThem']; ?></option> 
+                    <?php } ?>
                     </select>
+
                 </div>
-                <div class="form-group mt-2 text-center">
-                    <for button type="submit" class="btn">Publier</button>
+                <div class="form-group mt-2">
+                    <button type="submit" class="btn btn-primary">Créer l'article</button>
                 </div>
             </form>
         </div>

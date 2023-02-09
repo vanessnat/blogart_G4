@@ -42,7 +42,7 @@ $articles = sql_select("article", "*");
                                         </div>
                                         <div class="but-art">
                                             <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-edit">Edit</a>
-                                            <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-delet">Delete</a>
+                                            <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-d">Delete</a>
                                         </div>
                                     </div>
                                 </div>

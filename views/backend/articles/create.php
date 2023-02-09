@@ -70,8 +70,8 @@ $thematiques = sql_select("thematique", "*");
         </section>
         </section>
         <section>
-            <div class="create-articles">
-                <a href="create.php" class="btn btn-create">Créer l'article</a>
+            <div class="form-group mt-2">
+                <button type="submit" class="btn btn-creer">Créer un article</a>
             </div>
         </section>
     </tbody>

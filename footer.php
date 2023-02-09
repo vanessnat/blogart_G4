@@ -59,7 +59,7 @@ require_once 'config.php';
                         <a href="#" class="lien-footer">S'inscrire</a>
                     </li>
                     <li>
-                        <a href="#" class="lien-footer">Mentions légales</a>
+                        <a href="/views/frontend/mentionslegales.php" class="lien-footer">Mentions légales</a>
                     </li>
                 </ul>
             </div>
@@ -91,4 +91,5 @@ require_once 'config.php';
     </div>
 </footer>
 </body>
+
 </html>

@@ -676,3 +676,28 @@ header {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.text-mentions{
+    display: flex;
+}
+
+.mentions-sections{
+    display: flex;
+    flex-direction:column;
+    padding: 30px 0px;
+}
+
+.mention-editeur{
+    padding: 30px 0px;
+}
+
+.editeur-titre{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 48px;
+    color: #093D4D;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 40px;
+}

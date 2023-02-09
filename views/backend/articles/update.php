@@ -35,20 +35,26 @@ $thematiques = sql_select("thematique", "*");
                     <label for="libAccrochArt">Accroche</label>
                     <input id="libAccrochArt" class="form-control" type="text" name="libAccrochArt" value="<?php echo ($article['libAccrochArt'])?>">
                     <label for="parag1Art">Paragraphe 1</label>
-                    <input id="parag1Art" class="form-control" type="text-area" name="parag1Art" value="<?php echo ($article['parag1Art'])?>">
+                    <textarea id="story" name="story"rows="5" cols="33">
+                    <?php echo ($article['parag1Art'])?>
+                    </textarea>
                     <label for="libSsTitr1Art">Sous-titre 1</label>
                     <input id="libSsTitr1Art" class="form-control" type="text" name="libSsTitr1Art" value="<?php echo ($article['libSsTitr1Art'])?>">
                     <label for="parag2Art">Paragraphe 2</label>
-                    <input id="parag2Art" class="form-control" type="text-area" name="parag2Art" value="<?php echo ($article['parag2Art'])?>">
+                    <textarea id="story" name="story"rows="5" cols="33">
+                    <?php echo ($article['parag2Art'])?>
+                    </textarea>
                     <label for="libSsTitr2Art">Sous-titre 2</label>
                     <input id="libSsTitr2Art" class="form-control" type="text" name="libSsTitr2Art" value="<?php echo ($article['libSsTitr2Art'])?>">
                     <label for="parag3Art">Paragraphe 3</label>
-                    <input id="parag3Art" class="form-control" type="text-area" name="parag3Art" value="<?php echo ($article['parag3Art'])?>">
+
+                    <textarea id="story" name="story"rows="5" cols="33">
+                    <?php echo ($article['parag3Art'])?>
+                    </textarea>
                     <label for="libConclArt">Conclusion</label>
                     <input id="libConclArt" class="form-control" type="text" name="libConclArt" value="<?php echo ($article['libConclArt'])?>">
                     <label for="urlPhotArt">Illustration</label>
                     <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt" value="<?php echo ($article['urlPhotArt'])?>" accept="image/png, image/jpeg">
-                    
                     <label for="numThem" class="title">Thématiques</label>  
                     <select name="numThem" >
                     <option value="<?php echo ($article['numThem'])?>"><?php echo ($article['libThem'])?></option> 

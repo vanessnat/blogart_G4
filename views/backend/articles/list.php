@@ -31,7 +31,7 @@ $articles = sql_select("article", "*");
                             <td><?php echo $article['libTitrArt']; ?></td>
                             <td><?php echo $article['libChapoArt']; ?></td>
                             <td><?php echo $article['dtCreArt']; ?></td>
-                            <td><?php echo $article['libThem']; ?></td>
+                            <td><?php echo $article['numThem']; ?></td>
                             <td>
                                 <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-primary">Edit</a>
                                 <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>

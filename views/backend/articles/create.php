@@ -32,7 +32,9 @@ $thematiques = sql_select("thematique", "*");
                 </div>
                 <div class="form-group">
                     <label for="parag1Art">Paragraphe 1</label>
-                    <input id="parag1Art" class="form-control" type="text-area" name="parag1Art">
+                    <textarea id="story" name="story"rows="5" cols="33">
+                    </textarea>
+
                 </div>
                 <div class="form-group">
                     <label for="libSsTitr1Art">Sous-titre 1</label>
@@ -40,7 +42,8 @@ $thematiques = sql_select("thematique", "*");
                 </div>
                 <div class="form-group">
                     <label for="parag2Art">Paragraphe 2</label>
-                    <input id="parag2Art" class="form-control" type="text-area" name="parag2Art">
+                    <textarea id="story" name="story"rows="5" cols="33">
+                    </textarea>
                 </div>
                 <div class="form-group">
                     <label for="libSsTitr2Art">Sous-titre 2</label>
@@ -48,7 +51,8 @@ $thematiques = sql_select("thematique", "*");
                 </div>
                 <div class="form-group">
                     <label for="parag3Art">Paragraphe 3</label>
-                    <input id="parag3Art" class="form-control" type="text-area" name="parag3Art">
+                    <textarea id="story" name="story"rows="5" cols="33">
+                    </textarea>
                 </div>
                 <div class="form-group">
                     <label for="libConclArt">Conclusion</label>

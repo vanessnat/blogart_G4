@@ -19,8 +19,8 @@ include '../../header.php';
                     <input id="nomMemb" class="form-control" type="text" name="nomMemb" required>
                     <label for="pseudoMemb">Pseudo</label>
                     <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" required>
-                    <label for="pseudoMemb">Mot-de-passe</label>
-                    <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" required>
+                    <label for="passMemb">Mot-de-passe</label>
+                    <input id="passMemb" class="form-control" type="text" name="passMemb" required>
                     <label for="passMemb">Confimez le mot-de-passe</label>
                     <input id="passMemb" class="form-control" type="password" name="passMemb"  minlength="8" required>
                     <label for="eMailMemb">E-mail</label>

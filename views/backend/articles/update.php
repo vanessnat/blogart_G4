@@ -10,7 +10,7 @@ include '../../../header.php';
 
 
 $numArt = $_GET['numArt'];
-$article = sql_select("article", "*", "numArt = $numArt")[0];
+$article = sql_select("article INNER JOIN THEMATIQUE ON ARTICLE.numThem = THEMATIQUE.numThem", "*", "numArt = $numArt")[0];
 $thematiques = sql_select("thematique", "*");
 ?>
 
@@ -25,6 +25,7 @@ $thematiques = sql_select("thematique", "*");
             <!--Form to edit a new article-->
             <form action="<?php echo ROOT_URL . '/api/articles/update.php' ?>" method="post">
                 <div class="form-group">
+                    <input id="numArt" class="form-control" type="text" style="display: none" name="numArt" value="<?php echo ($article['numArt'])?>">
                     <label for="dtCreArt">Date</label>
                     <input id="dtCreArt" class="form-control" type="datetime-local" name="dtCreArt" value="<?php echo ($article['dtCreArt'])?>">
                     <label for="libTitrArt">Titre</label>
@@ -50,13 +51,13 @@ $thematiques = sql_select("thematique", "*");
                     
                     <label for="numThem" class="title">Thématiques</label>  
                     <select name="numThem" >
-                    <option value="">--Choisissez un thème--</option> 
+                    <option value="<?php echo ($article['numThem'])?>"><?php echo ($article['libThem'])?></option> 
                     <?php foreach($thematiques as $thematique){ ?>
                     <option value="<?php echo $thematique['numThem']; ?>"><?php echo $thematique['libThem']; ?></option> 
                     <?php } ?>
                     </select>
                     </select>
-                    
+
                 </div>
                 <div class="form-group mt-2">
                     <button type="submit" class="btn btn-primary">Mettre à jour l'article</button>

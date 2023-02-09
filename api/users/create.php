@@ -17,5 +17,6 @@ echo("</pre>");
 sql_insert('membre', "prenomMemb, nomMemb, pseudoMemb, passMemb, eMailMemb, dtCreaMemb, numStat", "'$prenomMemb', '$nomMemb', '$pseudoMemb', '$passMemb', '$eMailMemb', '$dtCreaMemb', '$numStat'");
 
 header('Location: ../../views/backend/members/list.php');
+header('Location: ../../views/backend/register.php');
 
 ?>

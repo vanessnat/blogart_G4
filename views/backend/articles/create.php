@@ -54,8 +54,10 @@ $thematiques = sql_select("thematique", "*");
                             </div>
                             <label for="libConclArt">Conclusion</label>
                             <input id="libConclArt" class="form-control" type="text" name="libConclArt">
+
                             <label for="urlPhotArt">Illustration</label>
-                            <input id="urlPhotArt" class="form-control" type="file" name="urlPhotArt">
+                            <input id="urlPhotArt" class="form-control" type="file" name="file" accept="image/png, image/jpeg">
+
                             <label for="numThem" class="title">Thématiques</label>  
                             <select name="numThem" >
                                 <option value="">--Choisissez un thème--</option> 

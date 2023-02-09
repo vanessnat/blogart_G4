@@ -11,7 +11,7 @@ include '../../header.php';
         </div>
         <div class="col-md-12">
             <!--Form to create a new member-->
-            <form action="<?php echo ROOT_URL . '/members/list.php' ?>" method="post">
+            <form action="<?php echo ROOT_URL . '/api/login/login.php' ?>" method="post">
                 <div class="form-group">
                     <label for="pseudoMemb">Pseudo</label>
                     <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" value="" required>
@@ -20,7 +20,8 @@ include '../../header.php';
                     <input id="numStat" style="display: none" class="form-control" type="text" name="numStat" >
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Se connecter</button>
+                    <button type= "submit" class="btn btn-primary">Se connecter</button>
                 </div>
             </form>
         </div>
+

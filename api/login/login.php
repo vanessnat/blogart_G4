@@ -4,14 +4,20 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php' ;
 
 $pseudoMemb = sql_escape($_POST['pseudoMemb']);
 $passMemb = sql_escape($_POST['passMemb']);
-$numStat = sql_escape($_POST['numStat']); 
 
-/*echo("<pre>");
-print_r($_POST);
-echo("</pre>");
-*/
-sql_select('membre', "pseudoMemb, passMemb, dtCreaMemb, numStat", " pseudoMemb = '$pseudoMemb', passMemb = '$passMemb', numStat = '$numStat'");
+$membre = sql_select('membre', "pseudoMemb, passMemb, dtCreaMemb, numStat, numMemb", "pseudoMemb = '$pseudoMemb'")[0];
 
-header('Location: ../../views/backend/members/list.php');
+if(isset($membre)){
+    if(password_verify($passMemb, $membre['passMemb'])){
+        $_SESSION['numMemb'] = $membre['numMemb'];
+    }
+    else{
+        exit ('Mot de passe incorrect'); 
+    }
+}
 
+header location 
+bouton ds header 
+is connect mcompte 
+if not s'inscrire, se connecter 
 ?>

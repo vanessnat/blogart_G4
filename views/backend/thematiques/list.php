@@ -20,7 +20,7 @@ $thematiques = sql_select("thematique", "*");
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th>Thématiques</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -37,7 +37,7 @@ $thematiques = sql_select("thematique", "*");
                     <?php } ?>
                 </tbody>
             </table>
-            <a href="create.php" class="btn btn-success">Create</a>
+            <a href="create.php" class="btn btn-success">Créer une thématique</a>
         </div>
     </div>
 

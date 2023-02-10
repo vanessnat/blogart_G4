@@ -3,28 +3,48 @@ Projet MMI 2022
 
 ## Fonctionnalités
 
-=> ici la liste des features implémentées et valides
+=> ici la liste des features implémentées
+
+Créer, ajouter, supprimer un article, voir la liste des articles
+Créer, ajouter, supprimer un membre, voir la liste des membres
+Créer, ajouter, supprimer un statut, voir la liste des statuts 
+Créer, ajouter, supprimer un mot-clé, voir la liste des mots-clés
+Créer, ajouter, supprimer une thématique, voir la liste des thématiques
+inscription/connexion
+espace admin
+pages cgu/mentions légales
+
 => ici la liste des features non implémentées
+
+Créer, ajouter, supprimer un j'aime, voir la liste des j'aime
+Créer, ajouter, supprimer un commentaire, voir la liste des commentaires
+tri par thématiques
+page article
+disparition du se connecter/s'inscire une fois connecté 
+option deconnexion
+formulaire de contact valide
+page en anglais 
+
 
 ## Panel Admin
 
-Accessible depuis : ??
+Accessible depuis : le bouton Mon Compte 
 
 ## Panel front
 
-Accessible depuis : ??
+Accessible depuis : views/frontend/Accueil.html
 
 **Identifiant localhost**
 
 > super-admin :
-> email : ??  
-> pass : ??
-> mdp : ???  
+> email : mbornerie@gmail.com
+pseudo : Mbornerie
+> mdp : Mbornerie
 
 > membre :
-> email : ??  
-> pass : ??
-> mdp : ???  
+> email : natacha.twyffels@gmail.com
+> pseudo : ntwyffels
+> mdp : ntwyffels
 
 **Identifiant url iut (si différent de localhost)**
 

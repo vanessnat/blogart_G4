@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php' ; 
+require_once __DIR__  . '/../../config.php' ; 
 
 
 $dtCreArt = sql_escape($_POST['dtCreArt']);
@@ -17,10 +17,13 @@ $numThem = sql_escape($_POST['numThem']);
 
 if(isset($_FILES)) {
     $path = upload_image($_FILES);
-    }
     $urlPhotArt = sql_escape($path); 
+    }
+else {
+    $urlPhotArt = null;
+}
 
-sql_insert('article', "dtCreArt, libTitrArt, libChapoArt, libAccrochArt, parag1Art, libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art,libConclArt, urlPhotArt, numThem", "'$dtCreArt', '$libTitrArt', '$libChapoArt', '$libAccrochArt', '$parag1Art', '$libSsTitr1Art', '$parag2Art', '$libSsTitr2Art', '$parag3Art', '$libConclArt', '$urlPhotArt', '$numThem'");
+sql_insert('article', "dtCreArt, libTitrArt, libChapoArt, libAccrochArt, parag1Art, libSsTitr1Art, parag2Art, libSsTitr2Art, parag3Art,libConclArt, urlPhotArt, numThem", "'$dtCreArt', '$libTitrArt', '$libChapoArt', '$libAccrochArt', '$parag1Art', '$libSsTitr1Art', '$parag2Art', '$libSsTitr2Art', '$parag3Art', '$libConclArt', '$urlPhotArt', $numThem");
 
 header('Location: ../../views/backend/articles/list.php');
 ?>

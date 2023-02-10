@@ -20,7 +20,7 @@ $keywords = sql_select("motcle", "*");
                 <thead>
                     <tr>
                         <th>Id</th>
-                        <th>Name</th>
+                        <th>Mots-clés</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -30,14 +30,14 @@ $keywords = sql_select("motcle", "*");
                             <td><?php echo $keyword['numMotCle']; ?></td>
                             <td><?php echo $keyword['libMotCle']; ?></td>
                             <td>
-                                <a href="update.php?numMotCle=<?php echo $keyword['numMotCle']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numMotCle=<?php echo $keyword['numMotCle']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="update.php?numMotCle=<?php echo $keyword['numMotCle']; ?>" class="btn btn-primary">Modifier</a>
+                                <a href="delete.php?numMotCle=<?php echo $keyword['numMotCle']; ?>" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>
                 </tbody>
             </table>
-            <a href="create.php" class="btn btn-success">Create</a>
+            <a href="create.php" class="btn btn-success">Créer un mot-clé</a>
         </div>
     </div>
 

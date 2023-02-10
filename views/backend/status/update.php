@@ -19,7 +19,7 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Edit Status</h1>
+            <h1>Mettre à jour un statut</h1>
         </div>
         <div class="col-md-12">
             <!--Form to edit a new status-->
@@ -30,7 +30,7 @@ $libStat = sql_select("STATUT", "libStat", "numStat = $numStat")[0]['libStat'];
                     <input id="libStat" class="form-control" type="text" name="libStat" value="<?php echo ($libStat)?>" >
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-primary">Mettre à jour</button>
                 </div>
             </form>
         </div>

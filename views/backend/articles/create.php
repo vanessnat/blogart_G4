@@ -17,46 +17,40 @@ $thematiques = sql_select("thematique", "*");
         <section>
             <div class="row">
                 <div class="col-md-12">
-                    <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post" enctype='multipart/form-data'>
+                    <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post" enctype="multipart/form-data">
                         <div class="form-groupedit">
                             <label for="dtCreArt">Date</label>
                             <input id="dtCreArt" class="form-control" type="datetime-local" name="dtCreArt">
+
                             <label for="libTitrArt">Titre</label>
                             <input id="libTitrArt" class="form-control" type="text" name="libTitrArt">
+
                             <label for="libChapoArt">Chapô</label>
-                            <input id="libChapoArt" class="form-control" type="text" name="libChapoArt">
+                            <textarea id="libChapoArt" class="form-control" name="libChapoArt" rows="5" cols="80"></textarea>
+
                             <label for="libAccrochArt">Accroche</label>
                             <input id="libAccrochArt" class="form-control" type="text-area" name="libAccrochArt">
-                            <div class="create-para1">
-                                <label for="parag1Art">Paragraphe 1</label>
-                            </div>
-                            <div class="para-textarea">
-                                <textarea id="story" name="story"rows="5" cols="80">
-                                </textarea>
-                            </div>
+
+                            <label for="parag1Art">Paragraphe 1</label>
+                            <textarea id="parag1Art"  class="form-control" name="parag1Art" rows="5" cols="80"></textarea>
+
                             <label for="libSsTitr1Art">Sous-titre 1</label>
                             <input id="libSsTitr1Art" class="form-control" type="text-area" name="libSsTitr1Art">
-                            <div class="create-para2">
-                                <label for="parag2Art">Paragraphe 2</label>
-                            </div>
-                            <div class="para-textarea">
-                                <textarea id="story" name="story"rows="5" cols="80">
-                                </textarea>
-                            </div>
+
+                            <label for="parag2Art">Paragraphe 2</label>
+                            <textarea id="parag2Art" class="form-control" name="parag2Art" rows="5" cols="80"></textarea>
+
                             <label for="libSsTitr2Art">Sous-titre 2</label>
                             <input id="libSsTitr2Art" class="form-control" type="text-area" name="libSsTitr2Art">
-                            <div class="create-para3">
-                                <label for="parag3Art">Paragraphe 3</label>
-                            </div>
-                            <div class="para-textarea">
-                                <textarea id="story" name="story"rows="5" cols="80">
-                                </textarea>
-                            </div>
+
+                            <label for="parag3Art">Paragraphe 3</label>
+                            <textarea id="parag3Art" class="form-control" name="parag3Art" rows="5" cols="80"></textarea>
+                            
                             <label for="libConclArt">Conclusion</label>
-                            <input id="libConclArt" class="form-control" type="text" name="libConclArt">
+                            <textarea id="libConclArt"  class="form-control" name="libConclArt" rows="5" cols="80"></textarea>
 
                             <label for="urlPhotArt">Illustration</label>
-                            <input id="urlPhotArt" class="form-control" type="file" name="file" accept="image/png, image/jpeg">
+                            <input id="file" class="form-control" type="file" name="file">
 
                             <label for="numThem" class="title">Thématiques</label>  
                             <select name="numThem" >

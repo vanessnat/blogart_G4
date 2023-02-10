@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config.php' ; 
+require_once __DIR__ . '/../../config.php' ; 
 
 $pseudoMemb = sql_escape($_POST['pseudoMemb']);
 $passMemb = sql_escape($_POST['passMemb']);

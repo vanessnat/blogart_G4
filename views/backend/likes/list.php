@@ -34,8 +34,8 @@ $likes = sql_select("likeart", "*");
                             <td><?php echo $like['dtCreArt']; ?></td>
                             <td><?php echo $like['numThem']; ?></td>
                             <td>
-                                <a href="update.php?numArt=<?php echo $like['numArt']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numArt=<?php echo $like['numArt']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="update.php?numArt=<?php echo $like['numArt']; ?>" class="btn btn-primary">Modifier</a>
+                                <a href="delete.php?numArt=<?php echo $like['numArt']; ?>" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>

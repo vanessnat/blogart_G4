@@ -37,14 +37,14 @@ $users= sql_select("membre", "*");
                             <td><?php echo $membre['eMailMemb']; ?></td>
                             <td><?php echo $membre['dtCreaMemb']; ?></td>
                             <td>
-                                <a href="update.php?numMemb=<?php echo $membre['numMemb']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numMemb=<?php echo $membre['numMemb']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="update.php?numMemb=<?php echo $membre['numMemb']; ?>" class="btn btn-primary">Modifier</a>
+                                <a href="delete.php?numMemb=<?php echo $membre['numMemb']; ?>" class="btn btn-danger">Supprimer</a>
                             </td>
                         </tr>
                     <?php } ?>
                 </tbody>
             </table>
-            <a href="create.php" class="btn btn-success">Create</a>
+            <a href="create.php" class="btn btn-success">Créer un utilisateur</a>
         </div>
     </div>
 

@@ -41,8 +41,8 @@ $articles = sql_select("article", "*");
                                             <?php echo $article['numThem']; ?>
                                         </div>
                                         <div class="but-art">
-                                            <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-edit">Edit</a>
-                                            <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-d">Delete</a>
+                                            <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-edit">Modifier</a>
+                                            <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-d">Supprimer</a>
                                         </div>
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@ $articles = sql_select("article", "*");
                 </section>
                 <section>
                     <div class="create-articles">
-                        <a href="create.php" class="btn btn-success">Create</a>
+                        <a href="create.php" class="btn btn-success">Créer un article</a>
                     </div>
                 </section>
             </tbody>

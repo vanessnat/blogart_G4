@@ -27,7 +27,7 @@ $articles = sql_select("article", "*");
                         <div class="card-articles">
                             <div class="card-article1">
                                 <div class="row align-items-center">
-                                    <div class="texts">
+                                    <div class="card-texts">
                                         <div class="titre-art">
                                             <?php echo $article['libTitrArt']; ?>
                                         </div>

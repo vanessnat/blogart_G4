@@ -452,7 +452,6 @@ header {
 }
 
 
-
 .button-lire{
     text-align: center;
     background: url(/src/css/Marbre\ 1.png);
@@ -587,16 +586,17 @@ header {
 .section-articles-card{
     display: flex;
     display: inline-block;
+    margin: auto;
 }
 
 .card-articles{
     background-color:#FFFFFF;
+    margin: auto;
     border-radius: 20px;
-    width: 700px;
     padding: 30px;
     display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    width: 700px;
 }
 
 .titre-art{
@@ -607,6 +607,7 @@ header {
     display: flex;
     justify-content: flex-start;
     color: #093D4C;
+    padding: 20px;
 }
 
 .chapo-art{
@@ -616,7 +617,8 @@ header {
     line-height: 29px;
     display: flex;
     justify-content: flex-start;
-    color:#093D4C
+    color:#093D4C;
+    padding: 20px;
 }
 
 .date-art{
@@ -628,6 +630,7 @@ header {
     display: flex;
     justify-content: flex-end;
     color:#093D4D;
+    padding: 20px;
 }
 
 .mots-art{
@@ -638,6 +641,7 @@ header {
     font-size: 16px;
     line-height: 16px;
     color: #093D4D;
+    padding: 20px;
 }
 
 .choix-arttext{
@@ -662,6 +666,7 @@ header {
     width: 50px;
     padding: 40px;
     border-radius: 20px;
+    margin: 20px;
 }
 
 .btn-delete{
@@ -669,6 +674,11 @@ header {
     width: 50px;
     padding: 40px;
     border-radius: 20px;
+    margin: 20px;
+}
+
+.card-texts{
+    padding: 20px;
 }
 
 .btn-update{
@@ -835,4 +845,11 @@ header {
 .btn-ref{
     color:#D6DADF;
     padding: 20px;
+}
+
+.delete-page{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 70px;
 }

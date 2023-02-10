@@ -28,13 +28,13 @@ require_once 'config.php';
             <div class="col-lg-3 col-12">
                 <ul class="list-footer">
                     <li>
-                        <a href="#" class="lien-footer">Tous nos articles</a>
+                        <a href="/views/backend/articles/list.php" class="lien-footer">Tous nos articles</a>
                     </li>
                     <li>
-                        <a href="#" class="lien-footer">Histoires et secrets</a>
+                        <a href="/views/backend/articles/list.php" class="lien-footer">Histoires et secrets</a>
                     </li>
                     <li>
-                        <a href="#" class="lien-footer">Lieux et monuments</a>
+                        <a href="/views/backend/articles/list.php" class="lien-footer">Lieux et monuments</a>
                     </li>
                     <li>
                         <a href="#" class="lien-footer">Actualités</a>
@@ -53,10 +53,10 @@ require_once 'config.php';
                         <a href="#" class="lien-footer">Compte</a>
                     </li>
                     <li>
-                        <a href="#" class="lien-footer">Se connecter</a>
+                        <a href="/views/backend/login.php" class="lien-footer">Se connecter</a>
                     </li>
                     <li>
-                        <a href="#" class="lien-footer">S'inscrire</a>
+                        <a href="/views/backend/register.php" class="lien-footer">S'inscrire</a>
                     </li>
                     <li>
                         <a href="/views/frontend/mentionslegales.php" class="lien-footer">Mentions légales</a>

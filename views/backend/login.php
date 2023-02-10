@@ -21,7 +21,7 @@ include '../../header.php';
                     <label for="pseudoMemb">Pseudo</label>
                     <input id="pseudoMemb" class="form-control" type="text" name="pseudoMemb" value="" required>
                     <label for="passMemb">Mot-de-passe</label>
-                    <input id="passMemb" class="form-control" type="text" name="passMemb" value="" required>
+                    <input id="passMemb" class="form-control" type="text" name="passMemb" value="" minlength="8" required>
                     <input id="numStat" style="display: none" class="form-control" type="text" name="numStat" >
                 </div>
                 <div class="form-group mt-2">

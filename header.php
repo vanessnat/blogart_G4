@@ -35,14 +35,14 @@ require_once 'config.php';
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="/views/backend/register.php" >	<?php 
-                        if (isset($_SESSION['numMemb'])){ 
+                        if (!isset($_SESSION['numMemb'])){ 
                             echo ("S'inscrire");
                         }
                             ?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="/views/backend/login.php" ><?php 
-                        if (isset($_SESSION['numMemb'])){ 
+                        if (!isset($_SESSION['numMemb'])){ 
                             echo ("Se connecter");
                         }
                             ?></a>

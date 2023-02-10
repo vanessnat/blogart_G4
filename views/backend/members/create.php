@@ -7,7 +7,7 @@ include '../../../header.php';
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1>Create new Member</h1>
+            <h1>Créer un nouveau membre </h1>
         </div>
         <div class="col-md-12">
             <!--Form to create a new member-->
@@ -27,7 +27,7 @@ include '../../../header.php';
                     <input id="numStat" class="form-control" type="text" name="numStat" >
                     </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-primary">Créer un membre</button>
                 </div>
             </form>
         </div>

@@ -85,10 +85,10 @@ include '../../header.php';
                         <p class="card-text">Un guide d'exeption pour une ville d'exeption. Aujourd'hui, on vous dresse le portrait d'Olivier Delteil, un homme où la vie rime avec passion.</p>
                     </div>
                     <div class="mots-cles">
-                        <div class="button-mot">
-                            <a href="#" class="guide">Guide</a>
-                            <a href="#" class="visite">Visite</a>
-                            <a href="#" class="bordeaux">Bordeaux</a>
+                        <div class="box-boutons">
+                            <a href="#" class="button-mot" class="guide">Guide</a>
+                            <a href="#" class="button-mot" class="visite">Visite</a>
+                            <a href="#" class="button-mot" class="bordeaux">Bordeaux</a>
                         </div>
                     </div>
                     <div class="plus">

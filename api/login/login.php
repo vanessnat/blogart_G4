@@ -16,8 +16,5 @@ if(isset($membre)){
     }
 }
 
-header location 
-bouton ds header 
-is connect mcompte 
-if not s'inscrire, se connecter 
-?>
+
+header('Location: ../../views/backend/members/list.php');

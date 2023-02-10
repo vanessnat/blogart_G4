@@ -17,7 +17,7 @@ $thematiques = sql_select("thematique", "*");
         <section>
             <div class="row">
                 <div class="col-md-12">
-                    <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post">
+                    <form action="<?php echo ROOT_URL . '/api/articles/create.php' ?>" method="post" enctype='multipart/form-data'>
                         <div class="form-groupedit">
                             <label for="dtCreArt">Date</label>
                             <input id="dtCreArt" class="form-control" type="datetime-local" name="dtCreArt">
@@ -66,14 +66,11 @@ $thematiques = sql_select("thematique", "*");
                                 <?php } ?>
                             </select>
                         </div>
+                        <div class="form-group mt-2">
+                            <button type="submit" class="btn btn-creer">Créer un article</a>
+                        </div>
                     </form>
                 </div>
-            </div>
-        </section>
-        </section>
-        <section>
-            <div class="form-group mt-2">
-                <button type="submit" class="btn btn-creer">Créer un article</a>
             </div>
         </section>
     </tbody>

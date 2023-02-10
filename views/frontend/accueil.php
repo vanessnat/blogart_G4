@@ -23,7 +23,7 @@ include '../../header.php';
         <div class="bloc-intro">
             <div class="container">
                     <h2 class="col-mid-4 text-left">Insolit'Bordeaux</h2>
-                    <h5 class="col-mid-4 text-left">Insolit'Bordeaux vous communique tout un tas d'histoires et de secrets autour de la ville de Bordeaux. Sur des lieux, monuments, comme célébrités ou expositions, nos articles rédigés par notre équipe veulent vous dévoiler les secrets les plus insolites et méconnus.</h4>
+                    <h5 class="col-mid-4 text-left">Insolit'Bordeaux vous communique tout un tas d'histoires et de secrets autour de la ville de Bordeaux. Sur des lieux, monuments, comme célébrités ou expositions, nos articles rédigés par notre équipe veulent vous dévoiler les secrets les plus insolites et méconnus de notre chère Burdigala.</h4>
                 </div>
             </div>
         </div>

@@ -27,15 +27,15 @@ $likes = sql_select("likeart", "*");
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach ($articles as $article) { ?>
+                    <?php foreach ($likes as $like) { ?>
                         <tr>
-                            <td><?php echo $article['libTitrArt']; ?></td>
-                            <td><?php echo $article['libChapoArt']; ?></td>
-                            <td><?php echo $article['dtCreArt']; ?></td>
-                            <td><?php echo $article['numThem']; ?></td>
+                            <td><?php echo $like['libTitrArt']; ?></td>
+                            <td><?php echo $like['libChapoArt']; ?></td>
+                            <td><?php echo $like['dtCreArt']; ?></td>
+                            <td><?php echo $like['numThem']; ?></td>
                             <td>
-                                <a href="update.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-primary">Edit</a>
-                                <a href="delete.php?numArt=<?php echo $article['numArt']; ?>" class="btn btn-danger">Delete</a>
+                                <a href="update.php?numArt=<?php echo $like['numArt']; ?>" class="btn btn-primary">Edit</a>
+                                <a href="delete.php?numArt=<?php echo $like['numArt']; ?>" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
                     <?php } ?>

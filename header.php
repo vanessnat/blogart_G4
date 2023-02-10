@@ -34,13 +34,27 @@ require_once 'config.php';
                         <a class="nav-link active text-white" aria-current="page" href="#" >Actualités</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/register.php" >S'inscrire</a>
+                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/register.php" >	<?php 
+                        if (!isset($_SESSION['numMemb'])){ 
+                            echo ("S'inscrire");
+                        }
+                            ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/login.php" >Se connecter</a>
+                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/login.php" ><?php 
+                        if (!isset($_SESSION['numMemb'])){ 
+                            echo ("Se connecter");
+                        }
+                            ?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/dashboard.php">Mon compte</a>
+                        <a class="nav-link active text-white" aria-current="page" href="/views/backend/dashboard.php"><?php 
+                        if (isset($_SESSION['numMemb'])){ 
+                            echo ("Mon compte");
+                        }else{
+                            echo "";
+                        }
+                            ?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="#" >Eng | Fr</a>

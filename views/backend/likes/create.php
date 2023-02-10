@@ -21,7 +21,7 @@ include '../../../header.php';
                     </select>
                 </div>
                 <div class="form-group mt-2">
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-primary">J'aime</button>
                 </div>
             </form>
         </div>

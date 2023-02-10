@@ -58,14 +58,14 @@ include '../../header.php';
                     </div>
                     <div class="mots-cles">
                         <div class="box-boutons">
-                            <a class="btn btn-ref" href="#" role="button">Guide</a>
-                            <a class="btn btn-ref" href="#" role="button">Visite</a>
+                            <a class="btn btn-ref" href="#" role="button">Criminologie</a>
+                            <a class="btn btn-ref" href="#" role="button">Exposition</a>
                             <a class="btn btn-ref" href="#" role="button">Bordeaux</a>
                         </div>
                     </div>
                     <div class="plus">
                         <div class="button-lire">
-                            <a href="#" class="lire-plus">En lire plus</a>
+                            <a href="/views/backend/articles/list.php" class="lire-plus">En lire plus</a>
                         </div>
                     </div>
                 </div>
@@ -85,25 +85,20 @@ include '../../header.php';
                         <p class="card-text">Un guide d'exeption pour une ville d'exeption. Aujourd'hui, on vous dresse le portrait d'Olivier Delteil, un homme où la vie rime avec passion.</p>
                     </div>
                     <div class="mots-cles">
-                        <div class="box-boutons">
+                        <div class="button-box">
                             <a class="btn btn-ref" href="#" role="button">Guide</a>
                             <a class="btn btn-ref" href="#" role="button">Visite</a>
                             <a class="btn btn-ref" href="#" role="button">Bordeaux</a>
                         </div>
                     </div>
                     <div class="plus">
-                        <div class="button-lire">
-                            <a href="#" class="lire-plus">En lire plus</a>
-                        </div>
+                    <div class="button-lire">
+                            <a href="/views/backend/articles/list.php" class="lire-plus">En lire plus</a>
+                        </div> 
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    
-
-    <section class="text-center">
-        <iframe class="iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11313.04051376454!2d-0.5849997921874824!3d44.8569989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5528763e4a8959%3A0x6a0782a140a43f2c!2sArchives%20d%C3%A9partementales%20de%20la%20Gironde!5e0!3m2!1sfr!2sfr!4v1675871240064!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
 </body>

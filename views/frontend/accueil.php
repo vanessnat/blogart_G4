@@ -57,10 +57,10 @@ include '../../header.php';
                         <p class="card-text">Connaissez-vous le bertillonage ? Célèbre pour ses superbes rôles hollywoodiens, l'appareil en a plus d'un tour dans son boitier.</p>
                     </div>
                     <div class="mots-cles">
-                        <div class="button-mot">
-                            <a href="#" class="btn" role="button" data-bs-toggle="button">criminologie</a>
-                            <a href="#" class="btn" role="button" data-bs-toggle="button">exposition</a>
-                            <a href="#" class="btn" role="button" data-bs-toggle="button">bordeaux</a>
+                        <div class="box-boutons">
+                            <a class="btn btn-ref" href="#" role="button">Guide</a>
+                            <a class="btn btn-ref" href="#" role="button">Visite</a>
+                            <a class="btn btn-ref" href="#" role="button">Bordeaux</a>
                         </div>
                     </div>
                     <div class="plus">
@@ -86,9 +86,9 @@ include '../../header.php';
                     </div>
                     <div class="mots-cles">
                         <div class="box-boutons">
-                            <a href="#" class="button-mot" class="guide">Guide</a>
-                            <a href="#" class="button-mot" class="visite">Visite</a>
-                            <a href="#" class="button-mot" class="bordeaux">Bordeaux</a>
+                            <a class="btn btn-ref" href="#" role="button">Guide</a>
+                            <a class="btn btn-ref" href="#" role="button">Visite</a>
+                            <a class="btn btn-ref" href="#" role="button">Bordeaux</a>
                         </div>
                     </div>
                     <div class="plus">

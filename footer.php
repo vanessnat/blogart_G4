@@ -47,7 +47,7 @@ require_once 'config.php';
             <div class="col-lg-3 col-12">
                 <ul class="list-footer">
                     <li>
-                        <a href="#" class="lien-footer">À propos</a>
+                        <a href="/views/frontend/cgu.php" class="lien-footer">À propos</a>
                     </li>
                     <li>
                         <a href="#" class="lien-footer">Compte</a>

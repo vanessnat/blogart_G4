@@ -19,7 +19,7 @@ include '../../../header.php';
 <Body style="background-color: #ECECEC">
 <section>
         <img src="/src/css/Accueil Image.png" class="img-fluid">
-        <div class="bloc-article">
+        <div class="bloc-article4">
             <div class="container">
                     <h2 class="col-mid-4 text-center">La science à la poursuite du crime</h2>
                 </div>

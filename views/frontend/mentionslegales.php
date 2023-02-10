@@ -20,7 +20,7 @@ include '../../header.php';
             <div class="mentions-sections">
                 <div class="mention-editeur">
                     <div class="editeur-titre">
-                        <h2>Editeur</h2>
+                        <h2>Editeurs</h2>
                     </div>
                     <div class="editeur-sstitre">
                         <h4> FAYE Chloé </h4>

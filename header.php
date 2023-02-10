@@ -19,7 +19,7 @@ require_once 'config.php';
 <header>
         <nav class="navbar navbar-expand-lg" style="background-color: #093D4D; ">
             <div class="container">
-            <a class="navbar-brand" href="/views/frontend/Accueil.html">
+            <a class="navbar-brand" href="/views/frontend/accueil.php">
                 <img src="/src/css/Logo 2.jpg" alt="logo" width="85" height="84">
             </a>
             <div class="container-fluid">
